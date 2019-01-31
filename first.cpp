@@ -1995,6 +1995,50 @@
 //	return 0;
 //}
 
+/*84. Largest Rectangle in Histogram */
+// int largestRectangleArea(vector<int>& heights)
+// {
+//    stack<int> sta;
+//    int nMax = 0;
+//    for (auto &it : heights)
+//    {
+//        if (sta.empty() || sta.top() <= it)
+//        {
+//            sta.push(it);
+//        }
+//        else
+//        {
+//            int i = 0;
+//            while (!sta.empty() && sta.top() > it)
+//            {
+//                ++i;
+//                nMax = max(nMax, sta.top()*i);
+//                sta.pop();
+//            }
+//            while (i--)
+//            {
+//                sta.push(it);
+//            }
+//            sta.push(it);
+//        }
+//    }
+//    int cnt = 0;
+//    while (!sta.empty())
+//    {
+//        ++cnt;
+//        nMax = max(nMax, sta.top()*cnt);
+//        sta.pop();
+//    }
+//    return nMax;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{2,1,5,6,2,3};
+//     cout<<largestRectangleArea(vec)<<endl;
+//     return 0;
+// }
+
 /*88. Merge Sorted Array */
 //void merge(vector<int>& nums1, int m, vector<int>& nums2, int n)
 //{
