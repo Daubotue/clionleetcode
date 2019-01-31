@@ -2084,6 +2084,47 @@
 //	return 0;
 //}
 
+/*94. Binary Tree Inorder Traversal*/
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// vector<int> inorderTraversal(TreeNode* root)
+// {
+//     vector<int> res;
+//     if (root == nullptr)
+//         return res;
+//     stack<TreeNode*> sta;
+//     TreeNode *p = root;
+//     while (p != nullptr || !sta.empty())
+//     {
+//         while (p != nullptr)
+//         {
+//             sta.push(p);
+//             p = p->left;
+//         }
+//         p = sta.top();
+//         sta.pop();
+//         res.push_back(p->val);
+//         p = p->right;
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     TreeNode* root = new TreeNode(1);
+//     root->right = new TreeNode(2);
+//     root->right->left = new TreeNode(3);
+//     vector<int> res = inorderTraversal(root);
+//     for (auto &it : res)
+//         cout<<it<<endl;
+//     return 0;
+// }
+
 /*98. Validate Binary Search Tree */
 //struct TreeNode {
 //	int val;
