@@ -2207,6 +2207,45 @@
 //	return 0;
 //}
 
+/*101. Symmetric Tree*/
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// bool auxSymmetric(TreeNode* left, TreeNode* right)
+// {
+//     if (left == nullptr && right == nullptr)
+//         return true;
+//     if (left == nullptr || right == nullptr)
+//         return false;
+//     if (left->val != right->val)
+//         return false;
+//     return auxSymmetric(left->left, right->right) && auxSymmetric(left->right, right->left);
+// }
+//
+// bool isSymmetric(TreeNode* root)
+// {
+//     if (root == nullptr)
+//         return true;
+//     return auxSymmetric(root->left, root->right);
+// }
+//
+// int main()
+// {
+//     TreeNode* root = new TreeNode(1);
+//     root->left = new TreeNode(2);
+//     root->right = new TreeNode(2);
+//     root->left->left = new TreeNode(3);
+//     root->left->right = new TreeNode(4);
+//     root->right->left = new TreeNode(4);
+//     root->right->right = new TreeNode(3);
+//     cout<<boolalpha<<isSymmetric(root)<<endl;
+//     return 0;
+// }
+
 /*102. Binary Tree Level Order Traversal */
 //struct TreeNode {
 //	int val;
