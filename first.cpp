@@ -2299,6 +2299,97 @@
 //	return 0;
 //}
 
+/*103. Binary Tree Zigzag Level Order Traversal*/
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// vector<vector<int>> zigzagLevelOrder(TreeNode* root)
+// {
+//     vector<vector<int> > res;
+//     if (root == nullptr)
+//         return res;
+//     stack<TreeNode*> s1;
+//     stack<TreeNode*> s2;
+//     vector<int> vec;
+//     TreeNode *tmp = root;
+//     s1.push(tmp);
+//     while (!s1.empty() || !s2.empty())
+//     {
+//         while (!s1.empty())
+//         {
+//             TreeNode *nd = s1.top();
+//             s1.pop();
+//             vec.push_back(nd->val);
+//             if (nd->left != nullptr)
+//                 s2.push(nd->left);
+//             if (nd->right != nullptr)
+//                 s2.push(nd->right);
+//         }
+//         if (!vec.empty())
+//             res.push_back(vec);
+//         vec.clear();
+//         while (!s2.empty())
+//         {
+//             TreeNode *nd = s2.top();
+//             s2.pop();
+//             vec.push_back(nd->val);
+//             if (nd->right != nullptr)
+//                 s1.push(nd->right);
+//             if (nd->left != nullptr)
+//                 s1.push(nd->left);
+//         }
+//         if (!vec.empty())
+//             res.push_back(vec);
+//         vec.clear();
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     TreeNode *root = new TreeNode(3);
+//     root->left = new TreeNode(9);
+//     root->right = new TreeNode(20);
+//     root->right->left = new TreeNode(15);
+//     root->right->right = new TreeNode(17);
+//     vector<vector<int> > res = zigzagLevelOrder(root);
+//     for (auto &it : res)
+//     {
+//         for (auto &iter : it)
+//             cout<<iter<<" ";
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
+/*104. Maximum Depth of Binary Tree*/
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// int maxDepth(TreeNode* root)
+// {
+//    return root == nullptr ? 0 : max(maxDepth(root->left), maxDepth(root->right))+1;
+// }
+//
+// int main()
+// {
+//     TreeNode *root = new TreeNode(3);
+//     root->left = new TreeNode(9);
+//     root->right = new TreeNode(20);
+//     root->right->left = new TreeNode(15);
+//     root->right->right = new TreeNode(17);
+//     cout<<maxDepth(root)<<endl;
+//     return 0;
+// }
+
 /*125. Valid Palindrome */
 //void toLower(string &s)
 //{
