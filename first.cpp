@@ -2390,6 +2390,48 @@
 //     return 0;
 // }
 
+/*105. Construct Binary Tree from Preorder and Inorder Traversal*/
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// TreeNode* makeTree(vector<int> &preVec, int preStart, vector<int> &inVec, int inStart, int len)
+// {
+//     if (len <= 0)
+//         return nullptr;
+//     int pos = 0;
+//     TreeNode *r = new TreeNode(preVec[preStart]);
+//     while (pos < len)
+//     {
+//         if (preVec[preStart] == inVec[inStart+pos])
+//             break;
+//         ++pos;
+//     }
+//     r->left = makeTree(preVec, preStart+1, inVec, inStart, pos);
+//     r->right = makeTree(preVec, preStart+pos+1, inVec, inStart+pos+1, len-pos-1);
+//     return  r;
+// }
+//
+// TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder)
+// {
+//    TreeNode *root;
+//    int nLen = preorder.size();
+//     root = makeTree(preorder, 0, inorder, 0, nLen);
+//    return root;
+// }
+//
+// int main()
+// {
+//     vector<int> preorder{3,9,20,15,7};
+//     vector<int> inorder{9,3,15,20,7};
+//    TreeNode* res = buildTree(preorder, inorder);
+//    cout<<res->val;
+//    return 0;
+// }
+
 /*125. Valid Palindrome */
 //void toLower(string &s)
 //{
