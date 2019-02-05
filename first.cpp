@@ -2500,6 +2500,33 @@
 //     return 0;
 // }
 
+/*118. Pascal's Triangle */
+// vector<vector<int>> generate(int numRows)
+// {
+//     vector<vector<int> > res(numRows, vector<int>{1});
+//     for (int i=1; i<numRows; ++i)
+//     {
+//         for (int j=1; j<i; ++j)
+//         {
+//             res[i].push_back(res[i-1][j-1] + res[i-1][j]);
+//         }
+//         res[i].push_back(1);
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<vector<int> > res = generate(5);
+//     for (auto &it : res)
+//     {
+//         for (auto &iter : it)
+//             cout<<iter<<" ";
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
 /*125. Valid Palindrome */
 //void toLower(string &s)
 //{
