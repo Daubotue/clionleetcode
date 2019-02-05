@@ -2432,6 +2432,41 @@
 //    return 0;
 // }
 
+/*108. Convert Sorted Array to Binary Search Tree*/
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// TreeNode* auxArray2BST(vector<int> &vec, int start, int end)
+// {
+//     if (start > end)
+//         return nullptr;
+//     int mid = start + (end - start) / 2;
+//     TreeNode *r = new TreeNode(vec[mid]);
+//     r->left = auxArray2BST(vec, start, mid-1);
+//     r->right = auxArray2BST(vec, mid+1, end);
+//     return r;
+// }
+//
+// TreeNode* sortedArrayToBST(vector<int>& nums)
+// {
+//     if (nums.empty())
+//         return nullptr;
+//    TreeNode *root = auxArray2BST(nums, 0, nums.size()-1);
+//    return root;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{-10,-3,0,5,9};
+//     TreeNode *root = sortedArrayToBST(vec);
+//     cout<<root->val<<endl;
+//     return 0;
+// }
+
 /*125. Valid Palindrome */
 //void toLower(string &s)
 //{
