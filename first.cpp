@@ -2550,6 +2550,25 @@
 //     return 0;
 // }
 
+/*122. Best Time to Buy and Sell Stock II */
+// int maxProfit(vector<int>& prices)
+// {
+//     int res = 0, nLen = prices.size()-1;
+//     for (int i=0; i<nLen; ++i)
+//     {
+//         if (prices[i+1] > prices[i])
+//             res += prices[i+1] - prices[i];
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{7,1,5,3,6,4};
+//     cout<<maxProfit(vec)<<endl;
+//     return 0;
+// }
+
 /*125. Valid Palindrome */
 //void toLower(string &s)
 //{
