@@ -2527,6 +2527,29 @@
 //     return 0;
 // }
 
+/*121. Best Time to Buy and Sell Stock */
+// int maxProfit(vector<int>& prices)
+// {
+//     if (prices.empty())
+//         return 0;
+//     int minPrice = prices[0];
+//     int *array = new int [prices.size()]();
+//     int nLen = prices.size();
+//     for (int i=1; i<nLen; ++i)
+//     {
+//         minPrice = min(minPrice, prices[i]);
+//         array[i] = max(array[i-1], prices[i]-minPrice);
+//     }
+//     return array[nLen-1];
+// }
+//
+// int main()
+// {
+//     vector<int> vec{7,1,5,3,6,4};
+//     cout<<maxProfit(vec);
+//     return 0;
+// }
+
 /*125. Valid Palindrome */
 //void toLower(string &s)
 //{
