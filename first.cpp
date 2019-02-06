@@ -2569,6 +2569,48 @@
 //     return 0;
 // }
 
+/*124. Binary Tree Maximum Path Sum */
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// int nRes = INT_MIN;
+//
+// int auxMax(TreeNode *r)
+// {
+//     if (r == nullptr)
+//         return 0;
+//     int nMax = r->val;
+//     int lMax = auxMax(r->left), rMax = auxMax(r->right);
+//     if (lMax > 0)
+//         nMax += lMax;
+//     if (rMax > 0)
+//         nMax += rMax;
+//     if (nMax > nRes)
+//         nRes = nMax;
+//     return max(r->val, max(r->val+lMax, r->val+rMax));
+// }
+//
+// int maxPathSum(TreeNode* root)
+// {
+//    auxMax(root);
+//    return nRes;
+// }
+//
+// int main()
+// {
+//    TreeNode *root = new TreeNode(-10);
+//     root->left = new TreeNode(9);
+//     root->right = new TreeNode(20);
+//     root->right->left = new TreeNode(15);
+//     root->right->right = new TreeNode(7);
+//     cout<<maxPathSum(root)<<endl;
+//     return 0;
+// }
+
 /*125. Valid Palindrome */
 //void toLower(string &s)
 //{
