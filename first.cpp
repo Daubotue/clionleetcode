@@ -2706,6 +2706,43 @@
 //	return 0;
 //}
 
+/*128. Longest Consecutive Sequence */
+// int longestConsecutive(vector<int>& nums)
+// {
+//     map<int, bool> hash;
+//     for (auto &it : nums)
+//         hash[it] = true;
+//     int nRes = 0;
+//     for (auto &it : nums)
+//     {
+//         int nLen = 1;
+//         hash[it] = false;
+//         int item = it+1;
+//         while (hash[item])
+//         {
+//             ++nLen;
+//             hash[item] = false;
+//             ++item;
+//         }
+//         item = it-1;
+//         while (hash[item])
+//         {
+//             ++nLen;
+//             hash[item] = false;
+//             --item;
+//         }
+//         nRes = max(nLen, nRes);
+//     }
+//     return nRes;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{100, 4, 200, 1, 3, 2};
+//     cout<<longestConsecutive(vec)<<endl;
+//     return 0;
+// }
+
 /*129. Sum Root to Leaf Numbers */
 //struct TreeNode {
 //	int val;
@@ -2757,6 +2794,95 @@
 //	system("pause");
 //	return 0;
 //}
+
+/*130. Surrounded Regions */
+//struct POS
+//{
+//    int x, y;
+//    POS(int _x, int _y):x(_x), y(_y){};
+//};
+//
+//vector<vector<int> > steps{vector<int>{0,1}, vector<int>{0,-1}, vector<int>{1, 0}, vector<int>{-1, 0}};
+//
+// void bfs(vector<vector<char>> &board, int i, int j, int m, int n)
+// {
+//     queue<POS*> q;
+//     board[i][j] = '*';
+//     POS* pos = new POS(i, j);
+//     q.push(pos);
+//     while(!q.empty())
+//     {
+//         POS* front = q.front();
+//         q.pop();
+//         if(front->x > 0 && board[front->x-1][front->y] == 'O')
+//         {
+//             POS* up = new POS(front->x-1, front->y);
+//             q.push(up);
+//             board[up->x][up->y] = '*';
+//         }
+//         if(front->x < m-1 && board[front->x+1][front->y] == 'O')
+//         {
+//             POS* down = new POS(front->x+1, front->y);
+//             q.push(down);
+//             board[down->x][down->y] = '*';
+//         }
+//         if(front->y > 0 && board[front->x][front->y-1] == 'O')
+//         {
+//             POS* left = new POS(front->x, front->y-1);
+//             q.push(left);
+//             board[left->x][left->y] = '*';
+//         }
+//         if(front->y < n-1 && board[front->x][front->y+1] == 'O')
+//         {
+//             POS* right = new POS(front->x, front->y+1);
+//             q.push(right);
+//             board[right->x][right->y] = '*';
+//         }
+//     }
+// }
+//
+// void solve(vector<vector<char>>& board)
+// {
+//    if (board.empty() || board[0].empty())
+//        return ;
+//    int rows = board.size(), cols = board[0].size();
+//    for (int i=0; i<rows; ++i)
+//    {
+//        for (int j=0; j<cols; ++j)
+//        {
+//            if (board[i][j] == 'O' && (i==0 || i==rows-1 || j==0 || j==cols-1))
+//            {
+//                bfs(board, i, j, rows, cols);
+//            }
+//        }
+//    }
+//    for (int i=0; i<rows; ++i)
+//    {
+//        for (int j = 0; j < cols; ++j)
+//        {
+//            if (board[i][j] == 'O')
+//                board[i][j] = 'X';
+//            else if (board[i][j] == '*')
+//                board[i][j] = 'O';
+//        }
+//    }
+// }
+//
+// int main()
+// {
+//     vector<vector<char> > vec{vector<char>{'X', 'X', 'X', 'X'},
+//                               vector<char>{'X', 'O', 'O', 'X'},
+//                               vector<char>{'X', 'X', 'O', 'X'},
+//                               vector<char>{'X', 'O', 'X', 'X'}};
+//     solve(vec);
+//     for (auto &it : vec)
+//     {
+//         for (auto &iter : it)
+//             cout<<iter<<" ";
+//         cout<<endl;
+//     }
+//     return 0;
+// }
 
 /*131. Palindrome Partitioning */
 //bool isPalindrome(string str)
