@@ -2936,6 +2936,31 @@
 //	return 0;
 //}
 
+/*134. Gas Station */
+// int canCompleteCircuit(vector<int>& gas, vector<int>& cost)
+// {
+//     int nRes = 0, nTotal = 0, nSum = 0;
+//     for (int i=0; i<gas.size(); ++i)
+//     {
+//         nTotal += gas[i] - cost[i];
+//         nSum += gas[i] - cost[i];
+//         if (nTotal < 0)
+//         {
+//             nRes = i+1;
+//             nTotal = 0;
+//         }
+//     }
+//     return nSum>=0 ? nRes : -1;
+// }
+//
+// int main()
+// {
+//     vector<int> gas{3,3,4};
+//     vector<int> cost{3,4,4};
+//     cout<<canCompleteCircuit(gas, cost)<<endl;
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{
