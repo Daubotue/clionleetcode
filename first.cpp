@@ -2961,6 +2961,22 @@
 //     return 0;
 // }
 
+/*136. Single Number */
+// int singleNumber(vector<int>& nums)
+// {
+//    int nRes = 0;
+//    for (auto &it : nums)
+//        nRes ^= it;
+//    return nRes;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{4,1,2,1,2};
+//     cout<<singleNumber(vec)<<endl;
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{
