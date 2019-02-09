@@ -2977,6 +2977,40 @@
 //     return 0;
 // }
 
+/*138. Copy List with Random Pointer */
+// struct RandomListNode {
+//     int label;
+//     RandomListNode *next, *random;
+//     RandomListNode(int x) : label(x), next(NULL), random(NULL) {}
+// };
+//
+// RandomListNode *copyRandomList(RandomListNode *head)
+// {
+//     if (head == nullptr)
+//         return nullptr;
+//     RandomListNode *res = new RandomListNode(head->label);
+//     RandomListNode *nd1 = head, *nd2 = res;
+//     map<RandomListNode*, RandomListNode*> ma;
+//     while (nd1->next != nullptr)
+//     {
+//         ma[nd1] = nd2;
+//         nd1 = nd1->next;
+//         nd2->next = new RandomListNode(nd1->label);
+//         nd2 = nd2->next;
+//     }
+//     ma[nd1] = nd2;
+//     nd1 = head;
+//     nd2 = res;
+//     while (nd1->next != nullptr)
+//     {
+//         nd2->random = ma[nd1->random];
+//         nd1 = nd1->next;
+//         nd2 = nd2->next;
+//     }
+//     nd2->random = ma[nd1->random];
+//     return res;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{
