@@ -3011,6 +3011,41 @@
 //     return res;
 // }
 
+/*139. Word Break */
+// bool wordBreak(string s, vector<string>& wordDict)
+// {
+//    if (s == "" || wordDict.empty())
+//        return false;
+//    vector<bool> vec(s.length(), false);
+//    set<string> se;
+//    for (auto &it : wordDict)
+//        se.insert(it);
+//    for (int i=0; i<s.length(); ++i)
+//    {
+//        if (se.count(s.substr(0, i+1)))
+//        {
+//            vec[i] = true;
+//            continue;
+//        }
+//        for (int j=0; j<i; ++j)
+//        {
+//            if (vec[j] && se.count(s.substr(j+1, i-j)))
+//            {
+//                vec[i] = true;
+//                break;
+//            }
+//        }
+//    }
+//    return vec[s.length()-1];
+// }
+//
+// int main()
+// {
+//     vector<string> vec{"apple", "pen"};
+//     cout<<boolalpha<<wordBreak("applepenapple", vec)<<endl;
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{
