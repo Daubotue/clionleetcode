@@ -3046,6 +3046,85 @@
 //     return 0;
 // }
 
+/*140. Word Break II */
+// vector<string> resVec;
+//
+// void dfs(string str, vector<set<string> > &dict, int nLen)
+// {
+//     if (nLen == 0)
+//     {
+//         resVec.push_back(str);
+//         return;
+//     }
+//     for (auto &it : dict[nLen])
+//     {
+//         string newstr = (str == "") ? it : it+" "+str;
+//         dfs(newstr, dict, nLen-it.length());
+//     }
+// }
+//
+// vector<string> wordBreak(string s, vector<string>& wordDict)
+// {
+//     set<string> se;
+//     for (auto &it : wordDict)
+//         se.insert(it);
+//     vector<set<string> > vec(s.length()+1);
+//     for (int i=0; i<s.length(); ++i)
+//     {
+//         for (int j=1; j+i<=s.length(); ++j)
+//         {
+//             if (se.count(s.substr(i, j)))
+//             {
+//                 vec[i+j].insert(s.substr(i, j));
+//             }
+//         }
+//     }
+//     dfs(string(), vec, s.length());
+//     return resVec;
+// }
+//
+// int main()
+// {
+//     string s = "pineapplepenapple";
+//     vector<string> wordDict{"apple", "pen", "applepen", "pine", "pineapple"};
+//     vector<string> res = wordBreak(s, wordDict);
+//     for (auto &it : res)
+//         cout<<it<<endl;
+//     return 0;
+// }
+
+/*141. Linked List Cycle */
+// struct ListNode {
+//     int val;
+//     ListNode *next;
+//     ListNode(int x) : val(x), next(NULL) {}
+// };
+//
+// bool hasCycle(ListNode *head)
+// {
+//     if (head == nullptr || head->next == nullptr)
+//         return false;
+//     ListNode *fast = head->next;
+//     ListNode *late = head;
+//     while (fast!= nullptr && fast->next!=nullptr)
+//     {
+//         if (fast == late)
+//             return true;
+//         fast = fast->next->next;
+//         late = late->next;
+//     }
+//     return false;
+// }
+//
+// int main()
+// {
+//     ListNode *root = new ListNode(1);
+//     root->next = new ListNode(2);
+//     root->next->next = root;
+//     cout<<boolalpha<<hasCycle(root);
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{

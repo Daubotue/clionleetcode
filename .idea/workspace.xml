@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="1991" column="41" lean-forward="true" selection-start-line="1991" selection-start-column="41" selection-end-line="1991" selection-end-column="41" />
+            <state relative-caret-position="149">
+              <caret line="3106" column="38" selection-start-line="3106" selection-start-column="38" selection-end-line="3106" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -57,10 +57,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
+    <option name="x" value="497" />
+    <option name="y" value="86" />
     <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="height" value="989" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -68,17 +68,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="leetcodeCLion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="clionleetcode" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -126,28 +116,30 @@
       <workItem from="1548903724784" duration="1894000" />
       <workItem from="1548907191975" duration="533000" />
       <workItem from="1548907915573" duration="1457000" />
+      <workItem from="1549888968095" duration="429000" />
+      <workItem from="1549931263736" duration="2963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4371000" />
+    <option name="totallyTimeSpent" value="7763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3286334" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3275488" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -173,8 +165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="1991" column="41" lean-forward="true" selection-start-line="1991" selection-start-column="41" selection-end-line="1991" selection-end-column="41" />
+        <state relative-caret-position="149">
+          <caret line="3106" column="38" selection-start-line="3106" selection-start-column="38" selection-end-line="3106" selection-end-column="38" />
         </state>
       </provider>
     </entry>
