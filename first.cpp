@@ -3125,6 +3125,24 @@
 //     return 0;
 // }
 
+/*171. Excel Sheet Column Number */
+// int titleToNumber(string s)
+// {
+//     int sum = 0;
+//     for (int i=0; i<s.length(); ++i)
+//     {
+//         int tmp = s[i] - 'A' + 1;
+//         sum = sum*26 + tmp;
+//     }
+//     return sum;
+// }
+//
+// int main()
+// {
+//     cout<<titleToNumber("ZY")<<endl;
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{

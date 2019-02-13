@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="3106" column="38" selection-start-line="3106" selection-start-column="38" selection-end-line="3106" selection-end-column="38" />
+            <state relative-caret-position="169">
+              <caret line="3134" column="30" lean-forward="true" selection-start-line="3134" selection-start-column="30" selection-end-line="3134" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -117,18 +117,27 @@
       <workItem from="1548907191975" duration="533000" />
       <workItem from="1548907915573" duration="1457000" />
       <workItem from="1549888968095" duration="429000" />
-      <workItem from="1549931263736" duration="2963000" />
+      <workItem from="1549931263736" duration="3163000" />
+      <workItem from="1550057661162" duration="863000" />
     </task>
+    <task id="LOCAL-00001" summary="lxj:140, 141">
+      <created>1549934358657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549934358657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7763000" />
+    <option name="totallyTimeSpent" value="8826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -154,6 +163,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lxj:140, 141" />
+    <option name="LAST_COMMIT_MESSAGE" value="lxj:140, 141" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
@@ -165,8 +178,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="3106" column="38" selection-start-line="3106" selection-start-column="38" selection-end-line="3106" selection-end-column="38" />
+        <state relative-caret-position="169">
+          <caret line="3134" column="30" lean-forward="true" selection-start-line="3134" selection-start-column="30" selection-end-line="3134" selection-end-column="30" />
         </state>
       </provider>
     </entry>
