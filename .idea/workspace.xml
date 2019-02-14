@@ -11,10 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="135af4f5-0a60-4d5f-8b4d-ca2b9d4bf2db" name="Default Changelist" comment="lxj:171">
+    <list default="true" id="135af4f5-0a60-4d5f-8b4d-ca2b9d4bf2db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/first.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libstd.h" beforeDir="false" afterPath="$PROJECT_DIR$/libstd.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="3283" selection-start-line="3283" selection-end-line="3283" />
+            <state relative-caret-position="-147">
+              <caret line="3266" selection-start-line="3266" selection-start-column="2" selection-end-line="3307" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -143,7 +141,7 @@
       <workItem from="1549888968095" duration="429000" />
       <workItem from="1549931263736" duration="3163000" />
       <workItem from="1550057661162" duration="883000" />
-      <workItem from="1550143011564" duration="3590000" />
+      <workItem from="1550143011564" duration="3831000" />
     </task>
     <task id="LOCAL-00001" summary="lxj:140, 141">
       <created>1549934358657</created>
@@ -159,11 +157,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550058942252</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lxj:146, 148, 149">
+      <created>1550147463583</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1550147463583</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12436000" />
+    <option name="totallyTimeSpent" value="12677000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -174,12 +179,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991323" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3275488" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.3275488" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -197,18 +202,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lxj:140, 141" />
     <MESSAGE value="lxj:171" />
-    <option name="LAST_COMMIT_MESSAGE" value="lxj:171" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/first.cpp</url>
-          <line>3279</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="lxj:146, 148, 149" />
+    <option name="LAST_COMMIT_MESSAGE" value="lxj:146, 148, 149" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
@@ -231,8 +226,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="3283" selection-start-line="3283" selection-end-line="3283" />
+        <state relative-caret-position="-147">
+          <caret line="3266" selection-start-line="3266" selection-start-column="2" selection-end-line="3307" selection-end-column="4" />
         </state>
       </provider>
     </entry>
