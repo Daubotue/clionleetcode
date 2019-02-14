@@ -3125,6 +3125,188 @@
 //     return 0;
 // }
 
+/*146. LRU Cache */
+//class LRUCache {
+//public:
+//	LRUCache(int capacity)
+//	{
+//		nCapacity = capacity;
+//	}
+//
+//	int get(int key)
+//	{
+//		unordered_map<int, list<pair<int, int> >::iterator >::iterator it = hashMap.find(key);
+//		if (it == hashMap.end())
+//			return -1;
+//		else
+//		{
+//			int nRes = it->second->second;
+//			list< pair<int, int> >::iterator tmp = it->second;
+//			pair<int, int> tmpPair = *tmp;
+//			cacheList.erase(tmp);
+//			cacheList.push_front(tmpPair);
+//			hashMap[key] = cacheList.begin();
+//			return nRes;
+//		}
+//	}
+//
+//	void put(int key, int value)
+//	{
+//		unordered_map<int, list<pair<int, int> >::iterator >::iterator it = hashMap.find(key);
+//		if (it == hashMap.end())
+//		{
+//			pair<int, int> newPair = make_pair(key, value);
+//			if (cacheList.size() >= nCapacity)
+//			{
+//				int delKey = cacheList.back().first;
+//				unordered_map<int, list<pair<int, int> >::iterator >::iterator iter = hashMap.find(delKey);
+//				hashMap.erase(iter);
+//				cacheList.pop_back();
+//			}
+//			cacheList.push_front(newPair);
+//			hashMap[key] = cacheList.begin();
+//		}
+//		else
+//		{
+//			list< pair<int, int> >::iterator tmp = it->second;
+//			tmp->second = value;
+//			pair<int, int> tmpPair = *tmp;
+//			cacheList.erase(tmp);
+//			cacheList.push_front(tmpPair);
+//			hashMap[key] = cacheList.begin();
+//		}
+//	}
+//
+//private:
+//	int nCapacity;
+//	unordered_map<int, list<pair<int, int> >::iterator > hashMap;
+//	list<pair<int, int> > cacheList;
+//};
+//
+//int main()
+//{
+//	LRUCache *cache = new LRUCache(2);
+//
+//	cache->put(2, 1);
+//	cache->put(2, 2);
+//	cout << cache->get(2) << endl;       // returns 1
+//	cache->put(1, 1);    // evicts key 2
+//	cache->put(4, 1);    // evicts key 1
+//	cout << cache->get(2) << endl;       // returns -1 (not found)
+//	system("pause");
+//	return 0;
+//}
+
+/*148. Sort List */
+// struct ListNode {
+//     int val;
+//     ListNode *next;
+//     ListNode(int x) : val(x), next(NULL) {}
+// };
+//
+// ListNode* MergeList(ListNode *nd1, ListNode *nd2)
+// {
+//     ListNode *Dummy = new ListNode(-1);
+//     ListNode *res = Dummy;
+//     while (nd1 != nullptr || nd2 != nullptr)
+//     {
+//         int num1 = (nd1 == nullptr) ? INT_MAX : nd1->val;
+//         int num2 = (nd2 == nullptr) ? INT_MAX : nd2->val;
+//         if (num1 < num2)
+//         {
+//             res->next = new ListNode(num1);
+//             res = res->next;
+//             nd1 = nd1->next;
+//         }
+//         else
+//         {
+//             res->next = new ListNode(num2);
+//             res = res->next;
+//             nd2 = nd2->next;
+//         }
+//     }
+//     return Dummy->next;
+// }
+//
+// ListNode* sortList(ListNode* head)
+// {
+//     if (head == nullptr || head->next == nullptr)
+//         return head;
+//     ListNode *fast = head;
+//     ListNode *slow = head;
+//     while (fast->next != nullptr && fast->next->next != nullptr)
+//     {
+//         fast = fast->next->next;
+//         slow = slow->next;
+//     }
+//     fast = slow;
+//     slow = slow->next;
+//     fast->next = nullptr;
+//     ListNode *nd1 = sortList(head);
+//     ListNode *nd2 = sortList(slow);
+//     return MergeList(nd1, nd2);
+// }
+//
+// int main()
+// {
+//     ListNode *ln = new ListNode(-1);
+//     ln->next = new ListNode(5);
+//     ln->next->next = new ListNode(3);
+//     ln->next->next->next = new ListNode(4);
+//     ln->next->next->next->next = new ListNode(0);
+//     ListNode *res = sortList(ln);
+//     while (res != nullptr)
+//     {
+//         cout<<res->val<<endl;
+//         res = res->next;
+//     }
+//     return 0;
+// }
+
+/*149. Max Points on a Line */
+// struct Point {
+//     int x;
+//     int y;
+//     Point() : x(0), y(0) {}
+//     Point(int a, int b) : x(a), y(b) {}
+// };
+//
+// int maxPoints(vector<Point>& points)
+// {
+//     int nRes = 0;
+//     if (points.empty())
+//         return nRes;
+//     for (int i=0; i<points.size(); ++i)
+//     {
+//         unordered_map<double, int> hashMap;
+//         int tmpRes = 0;
+//         int nDuplicaiton = 0;
+//         for (int j=0; j<points.size(); ++j)
+//         {
+//             if (i == j)
+//                 continue;
+//             if (points[i].x == points[j].x && points[i].y == points[j].y)
+//                 nDuplicaiton++;
+//             else if (points[i].x == points[j].x)
+//                 hashMap[INT_MAX]++;
+//             else
+//                 hashMap[(double)(points[i].y - points[j].y) / (points[i].x - points[j].x)]++;
+//         }
+//         for (auto &it : hashMap)
+//             tmpRes = max(it.second, tmpRes);
+//         nRes = max(nRes, tmpRes + nDuplicaiton);
+//     }
+//     return nRes + 1;
+// }
+//
+// int main()
+// {
+////     vector<Point> points{Point(1,1), Point(3,2), Point(5,3), Point(4,1), Point(2,3), Point(1,4)};
+//     vector<Point> points{Point(0,0), Point(94911151,94911150), Point(94911152,94911151)};
+//     cout<<maxPoints(points)<<endl;
+//     return 0;
+// }
+
 /*171. Excel Sheet Column Number */
 // int titleToNumber(string s)
 // {
