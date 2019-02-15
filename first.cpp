@@ -3307,6 +3307,104 @@
 //     return 0;
 // }
 
+/*150. Evaluate Reverse Polish Notation */
+// int evalRPN(vector<string>& tokens)
+// {
+//     if (tokens.size() == 1)
+//         return stoi(tokens[0]);
+//     stack<int> sta;
+//     for (auto &it : tokens)
+//     {
+//         if (it == "+" || it == "-" || it == "*" || it == "/")
+//         {
+//             int num1 = sta.top();
+//             sta.pop();
+//             int num2 = sta.top();
+//             sta.pop();
+//             if (it == "+")
+//                 sta.push(num1 + num2);
+//             if (it == "-")
+//                 sta.push(num2 - num1);
+//             if (it == "*")
+//                 sta.push(num1 * num2);
+//             if (it == "/")
+//                 sta.push(num2 / num1);
+//         }
+//         else
+//         {
+//             sta.push(stoi(it));
+//         }
+//     }
+//     return sta.top();
+// }
+//
+// int main()
+// {
+//     vector<string> vec{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
+//     cout<<evalRPN(vec)<<endl;
+//     return 0;
+// }
+
+/*155. Min Stack */
+// class MinStack {
+// public:
+//     /** initialize your data structure here. */
+//     MinStack()
+//     {
+//     }
+//
+//     void push(int x)
+//     {
+//         sta.push(x);
+//         if (minStack.empty() || (!minStack.empty() && x <= minStack.top()))
+//         {
+//             minStack.push(x);
+//         }
+//     }
+//
+//     void pop()
+//     {
+//         if (!sta.empty())
+//         {
+//             if (sta.top() == minStack.top())
+//                 minStack.pop();
+//             sta.pop();
+//         }
+//     }
+//
+//     int top()
+//     {
+//         if (!sta.empty())
+//             return sta.top();
+//         return 0;
+//     }
+//
+//     int getMin()
+//     {
+//         if (!minStack.empty())
+//             return minStack.top();
+//         return 0;
+//     }
+//
+// private:
+//     stack<int> sta;
+//     stack<int> minStack;
+// };
+//
+// int main()
+// {
+//     MinStack minStack;
+//     minStack.push(-2);
+//     minStack.push(0);
+//     minStack.push(-3);
+//     cout<<minStack.getMin()<<endl;   //--> Returns -3.
+//     minStack.pop();
+//     cout<<minStack.top()<<endl;      //--> Returns 0.
+//     cout<<minStack.getMin()<<endl;   //--> Returns -2.
+//
+//     return 0;
+// }
+
 /*171. Excel Sheet Column Number */
 // int titleToNumber(string s)
 // {
