@@ -3474,6 +3474,101 @@
 //     return 0;
 // }
 
+/*162. Find Peak Element */
+// int findPeakElement(vector<int>& nums)
+// {
+//     int nLeft = 0, nRight = nums.size()-1;
+//     while (nLeft < nRight)
+//     {
+//         int nMid = nLeft + (nRight - nLeft) / 2;
+//         if (nums[nMid] < nums[nMid+1])
+//         {
+//             nLeft = nMid + 1;
+//         }
+//         else
+//         {
+//             nRight = nMid;
+//         }
+//     }
+//     return nLeft;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{1,2,1,3,5,6,4};
+//     cout<<findPeakElement(vec)<<endl;
+//     return 0;
+// }
+
+/*166. Fraction to Recurring Decimal */
+// string fractionToDecimal(int numerator, int denominator)
+// {
+//     if (numerator == 0)
+//         return "0";
+//     string res;
+//     unordered_map<int, int> hashMap;
+//     bool decimal = false;
+//     long long n = numerator;
+//     long long d = denominator;
+//     bool minus = (n<0) ^ (d<0);
+//     n = abs(n);
+//     d = abs(d);
+//     while (true)
+//     {
+//         if (n < d)
+//         {
+//             if (!decimal)
+//             {
+//                 if (res == "")
+//                     res = "0.";
+//                 else
+//                     res += ".";
+//                 decimal = true;
+//             }
+//             n *= 10;
+//         }
+//         int r = n - n/d*d;
+//         if (r == 0)
+//         {
+//             res += to_string(n/d);
+//             if (minus)
+//                 res = '-' + res;
+//             return res;
+//         }
+//         else
+//         {
+//             if (decimal)
+//             {
+//                 if (hashMap.find(n) == hashMap.end())
+//                 {
+//                     res += to_string(n/d);
+//                     hashMap[n] = res.size() - 1;
+//                 }
+//                 else
+//                 {
+//                     res = res.substr(0, hashMap[n]) + "(" + res.substr(hashMap[n]) + ")";
+//                     if (minus)
+//                         res = '-' + res;
+//                     return res;
+//                 }
+//             }
+//             else
+//             {
+//                 res += to_string(n/d);
+//             }
+//             n = r;
+//         }
+//     }
+// }
+//
+// int main()
+// {
+//     cout<<fractionToDecimal(2, 3)<<endl;
+//     cout<<fractionToDecimal(2, 1)<<endl;
+//     cout<<fractionToDecimal(1, 2)<<endl;
+//     return 0;
+// }
+
 /*171. Excel Sheet Column Number */
 // int titleToNumber(string s)
 // {
