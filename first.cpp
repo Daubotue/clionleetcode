@@ -3405,6 +3405,75 @@
 //     return 0;
 // }
 
+/*160. Intersection of Two Linked Lists */
+// struct ListNode {
+//     int val;
+//     ListNode *next;
+//     ListNode(int x) : val(x), next(NULL) {}
+// };
+//
+// ListNode *getIntersectionNode(ListNode *headA, ListNode *headB)
+// {
+//     if (headA == nullptr || headB == nullptr)
+//         return nullptr;
+//
+//     auto getLen = [](ListNode *head){
+//         int nLen = 0;
+//         ListNode *ln = head;
+//         while (ln != nullptr)
+//         {
+//             ++nLen;
+//             ln = ln->next;
+//         }
+//         return nLen;
+//     };
+//
+//     int nLA = getLen(headA);
+//     int nLB = getLen(headB);
+//     int delta = abs(nLA - nLB);
+//     ListNode *tmpA = headA, *tmpB = headB;
+//     if (nLA > nLB)
+//     {
+//         while (delta--)
+//             tmpA = tmpA->next;
+//     }
+//     else
+//     {
+//         while (delta--)
+//             tmpB = tmpB->next;
+//     }
+//     ListNode *res = nullptr;
+//     while (tmpA != nullptr)
+//     {
+//         if (tmpA == tmpB)
+//         {
+//             res = tmpA;
+//             break;
+//         }
+//         tmpA = tmpA->next;
+//         tmpB = tmpB->next;
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     ListNode *headA = new ListNode(4);
+//     headA->next = new ListNode(1);
+//     headA->next->next = new ListNode(8);
+//     headA->next->next->next = new ListNode(4);
+//     headA->next->next->next->next = new ListNode(5);
+//     ListNode *headB = new ListNode(5);
+//     headB->next = new ListNode(0);
+//     headB->next->next = new ListNode(1);
+//     headB->next->next->next = new ListNode(8);
+//     headB->next->next->next->next = new ListNode(4);
+//     headB->next->next->next->next->next = new ListNode(5);
+//     ListNode *res = getIntersectionNode(headA, headB);
+//     cout<<res->val<<endl;
+//     return 0;
+// }
+
 /*171. Excel Sheet Column Number */
 // int titleToNumber(string s)
 // {
