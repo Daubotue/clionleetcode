@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="135af4f5-0a60-4d5f-8b4d-ca2b9d4bf2db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/first.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="3558" column="6" lean-forward="true" selection-start-line="3505" selection-start-column="5" selection-end-line="3558" selection-end-column="6" />
+            <state relative-caret-position="1071">
+              <caret line="3503" selection-start-line="3503" selection-start-column="2" selection-end-line="3569" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -146,7 +145,7 @@
       <workItem from="1550226191077" duration="3191000" />
       <workItem from="1550366833772" duration="2195000" />
       <workItem from="1550381233140" duration="1538000" />
-      <workItem from="1550393852172" duration="1987000" />
+      <workItem from="1550393852172" duration="2199000" />
     </task>
     <task id="LOCAL-00001" summary="lxj:140, 141">
       <created>1549934358657</created>
@@ -183,11 +182,18 @@
       <option name="project" value="LOCAL" />
       <updated>1550368436595</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lxj:162 166">
+      <created>1550399507035</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1550399507036</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21588000" />
+    <option name="totallyTimeSpent" value="21800000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -198,7 +204,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -225,7 +231,8 @@
     <MESSAGE value="lxj:146, 148, 149" />
     <MESSAGE value="lxj:150 155" />
     <MESSAGE value="lxj:160" />
-    <option name="LAST_COMMIT_MESSAGE" value="lxj:160" />
+    <MESSAGE value="lxj:162 166" />
+    <option name="LAST_COMMIT_MESSAGE" value="lxj:162 166" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
@@ -248,8 +255,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="3558" column="6" lean-forward="true" selection-start-line="3505" selection-start-column="5" selection-end-line="3558" selection-end-column="6" />
+        <state relative-caret-position="1071">
+          <caret line="3503" selection-start-line="3503" selection-start-column="2" selection-end-line="3569" selection-end-column="4" />
         </state>
       </provider>
     </entry>
