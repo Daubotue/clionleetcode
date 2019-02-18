@@ -3569,6 +3569,36 @@
 //     return 0;
 // }
 
+/*169. Majority Element */
+// int majorityElement(vector<int>& nums)
+// {
+//     if (nums.size() == 1)
+//         return nums[0];
+//     int nHalf = (nums.size()+1) / 2;
+//     unordered_map<int, int> hashMap;
+//     for (auto &it : nums)
+//     {
+//         if (hashMap.find(it) == hashMap.end())
+//         {
+//             hashMap[it] = 1;
+//         }
+//         else
+//         {
+//             hashMap[it]++;
+//             if (hashMap[it] == nHalf)
+//                 return it;
+//         }
+//     }
+//     return nums[0];
+// }
+//
+// int main()
+// {
+//     vector<int> vec{2,2,1,1,1,2,2};
+//     cout<<majorityElement(vec)<<endl;
+//     return 0;
+// }
+
 /*171. Excel Sheet Column Number */
 // int titleToNumber(string s)
 // {
