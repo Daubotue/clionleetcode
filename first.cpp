@@ -3617,6 +3617,24 @@
 //     return 0;
 // }
 
+/*172. Factorial Trailing Zeroes */
+// int trailingZeroes(int n)
+// {
+//     int nRes = 0;
+//     while (n)
+//     {
+//         nRes += n / 5;
+//         n /= 5;
+//     }
+//     return nRes;
+// }
+//
+// int main()
+// {
+//     cout<<trailingZeroes(5)<<endl;
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{
