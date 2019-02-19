@@ -3635,6 +3635,58 @@
 //     return 0;
 // }
 
+/*179. Largest Number */
+// string largestNumber(vector<int>& nums)
+// {
+//     vector<string> vec;
+//     for (auto &it : nums)
+//         vec.push_back(to_string(it));
+//     sort(vec.begin(), vec.end(), [](const string &sA, const string &sB){
+//         return sA+sB > sB+sA;
+//     });
+//     if (vec[0] == "0")
+//         return "0";
+//     else
+//     {
+//         string res;
+//         for (auto &it : vec)
+//             res += it;
+//         return res;
+//     }
+// }
+//
+// int main()
+// {
+//     vector<int> vec{3,30,34,5,9};
+//     cout<<largestNumber(vec)<<endl;
+//     return 0;
+// }
+
+/*189. Rotate Array */
+// void rotate(vector<int>& nums, int k)
+// {
+//     k %= nums.size();
+//     reverse(nums.begin(), nums.end());
+//     auto it = nums.begin();
+//     while (k--)
+//         ++it;
+//     reverse(nums.begin(), it);
+//     reverse(it, nums.end());
+// }
+//
+// int main()
+// {
+//     for (int i=1; i<3; ++i)
+//     {
+//         vector<int> vec{-1,-100,3,99};
+//         rotate(vec, i);
+//         for (auto &it : vec)
+//             cout<<it<<" ";
+//         cout<<endl;
+//     }
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{

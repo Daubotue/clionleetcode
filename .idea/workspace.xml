@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="3633" column="5" selection-start-line="3633" selection-start-column="5" selection-end-line="3633" selection-end-column="5" />
+            <state relative-caret-position="189">
+              <caret line="3665" selection-start-line="3665" selection-start-column="2" selection-end-line="3687" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -81,7 +81,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,6 +92,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -147,7 +147,9 @@
       <workItem from="1550366833772" duration="2195000" />
       <workItem from="1550381233140" duration="1538000" />
       <workItem from="1550393852172" duration="2199000" />
-      <workItem from="1550451987882" duration="2078000" />
+      <workItem from="1550451987882" duration="2170000" />
+      <workItem from="1550475219859" duration="405000" />
+      <workItem from="1550573055553" duration="2067000" />
     </task>
     <task id="LOCAL-00001" summary="lxj:140, 141">
       <created>1549934358657</created>
@@ -198,17 +200,24 @@
       <option name="project" value="LOCAL" />
       <updated>1550453260877</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lxj:172">
+      <created>1550454199816</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1550454199816</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23878000" />
+    <option name="totallyTimeSpent" value="26442000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28997868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -242,7 +251,8 @@
     <MESSAGE value="lxj:160" />
     <MESSAGE value="lxj:162 166" />
     <MESSAGE value="lxj:169" />
-    <option name="LAST_COMMIT_MESSAGE" value="lxj:169" />
+    <MESSAGE value="lxj:172" />
+    <option name="LAST_COMMIT_MESSAGE" value="lxj:172" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
@@ -265,8 +275,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="3633" column="5" selection-start-line="3633" selection-start-column="5" selection-end-line="3633" selection-end-column="5" />
+        <state relative-caret-position="189">
+          <caret line="3665" selection-start-line="3665" selection-start-column="2" selection-end-line="3687" selection-end-column="4" />
         </state>
       </provider>
     </entry>
