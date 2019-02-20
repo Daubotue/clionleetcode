@@ -3687,6 +3687,43 @@
 //     return 0;
 // }
 
+/*190. Reverse Bits */
+// uint32_t reverseBits(uint32_t n)
+// {
+//     uint32_t res = 0;
+//     for (int i=0; i<32; ++i)
+//     {
+//         if ((n & 1) == 1)
+//         {
+//             res = (res<<1) + 1;
+//         }
+//         else
+//         {
+//            res = res << 1;
+//         }
+//         n = n >> 1;
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     cout<<reverseBits(43261596)<<endl;
+//     return 0;
+// }
+
+/*191. Number of 1 Bits */
+// int hammingWeight(uint32_t n)
+// {
+//     int res = 0;
+//     while (n)
+//     {
+//         res++;
+//         n = n & (n-1);
+//     }
+//     return res;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{
