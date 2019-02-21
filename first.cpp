@@ -3724,6 +3724,53 @@
 //     return res;
 // }
 
+/*198. House Robber */
+// int rob(vector<int>& nums)
+// {
+//     if (nums.size() < 2)
+//         return nums.empty() ? 0 : nums[0];
+//     vector<int> vec{nums[0], max(nums[0], nums[1])};
+//     for (int i=2; i<nums.size(); ++i)
+//     {
+//         vec.push_back(max(vec[i-1], vec[i-2]+nums[i]));
+//     }
+//     return vec.back();
+// }
+//
+// int main()
+// {
+//     vector<int> vec{2,7,9,3,1};
+//     cout<<rob(vec)<<endl;
+//     return 0;
+// }
+
+/*202. Happy Number */
+// bool isHappy(int n)
+// {
+//     set<int> se;
+//     while (1)
+//     {
+//         if (n == 1)
+//             return true;
+//         if (se.find(n) != se.end())
+//             return false;
+//         se.insert(n);
+//         int sum = 0;
+//         while (n)
+//         {
+//             sum += pow(n%10, 2);
+//             n /= 10;
+//         }
+//         n = sum;
+//     }
+// }
+//
+// int main()
+// {
+//     cout<<boolalpha<<isHappy(19)<<endl;
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{
