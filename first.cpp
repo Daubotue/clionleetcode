@@ -3744,6 +3744,63 @@
 //     return 0;
 // }
 
+/*200. Number of Islands */
+// void bfs(int i, int j, vector<vector<char>>& grid, vector<vector<bool>>& visited, int nRow, int nCol)
+// {
+//     int steps[4][2] = {{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+//     queue<tuple<int, int> > que;
+//     que.push(make_tuple(i, j));
+//     visited[i][j] = true;
+//     while (!que.empty())
+//     {
+//         tuple<int, int> pt = que.front();
+//         que.pop();
+//         for (int k=0; k<4; k++)
+//         {
+//             int nX = get<0>(pt) + steps[k][0];
+//             int nY = get<1>(pt) + steps[k][1];
+//             if (nX>=0 && nX<nRow && nY>=0 && nY<nCol && !visited[nX][nY] && grid[nX][nY]=='1')
+//             {
+//                 que.push(make_tuple(nX, nY));
+//                 visited[nX][nY] = true;
+//             }
+//         }
+//     }
+//
+// }
+//
+// int numIslands(vector<vector<char>>& grid)
+// {
+//     if (grid.empty() || grid[0].empty())
+//         return 0;
+//     int nRow = grid.size();
+//     int nCol = grid[0].size();
+//     vector<vector<bool> > visited(nRow, vector<bool>(nCol, false));
+//     int res = 0;
+//     for (int i=0; i<nRow; ++i)
+//     {
+//         for (int j=0; j<nCol; ++j)
+//         {
+//             if (!visited[i][j] && grid[i][j]=='1')
+//             {
+//                 bfs(i, j, grid, visited, nRow, nCol);
+//                 ++res;
+//             }
+//         }
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<vector<char> > grid{vector{'1', '1', '0', '0', '0'},
+//                                vector{'1', '1', '0', '0', '0'},
+//                                vector{'0', '0', '1', '0', '0'},
+//                                vector{'0', '0', '0', '1', '1'}};
+//     cout<<numIslands(grid)<<endl;
+//     return 0;
+// }
+
 /*202. Happy Number */
 // bool isHappy(int n)
 // {
@@ -3768,6 +3825,35 @@
 // int main()
 // {
 //     cout<<boolalpha<<isHappy(19)<<endl;
+//     return 0;
+// }
+
+/*204. Count Primes */
+// int countPrimes(int n)
+// {
+//     if (n < 2)
+//         return 0;
+//     vector<int> vec(n, 0);
+//     int nSqrt = sqrt(n) + 1;
+//     for (int i=2; i<nSqrt; ++i)
+//     {
+//         for (int j=i+i; j<n; j+=i)
+//         {
+//             vec[j] = 1;
+//         }
+//     }
+//     int res = 0;
+//     for (int i=2; i<n; ++i)
+//     {
+//         if (vec[i] == 0)
+//             ++res;
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     cout<<countPrimes(10)<<endl;
 //     return 0;
 // }
 
