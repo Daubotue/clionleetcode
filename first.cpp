@@ -3857,6 +3857,65 @@
 //     return 0;
 // }
 
+/*206. Reverse Linked List */
+// struct ListNode {
+//     int val;
+//     ListNode *next;
+//     ListNode(int x) : val(x), next(NULL) {}
+// };
+//
+// ListNode* reverseList(ListNode* head)
+// {
+//     if (head == nullptr)
+//         return nullptr;
+//     ListNode *res = new ListNode(1);
+//     while (head != nullptr)
+//     {
+//         ListNode *tmp = new ListNode(head->val);
+//         tmp->next = res->next;
+//         res->next = tmp;
+//         head = head->next;
+//     }
+//     return res->next;
+// }
+//
+// int main()
+// {
+//     ListNode *head = new ListNode(1);
+//     head->next = new ListNode(2);
+//     head->next->next = new ListNode(2);
+//     head->next->next->next = new ListNode(3);
+//     head->next->next->next->next = new ListNode(4);
+//     head->next->next->next->next->next = new ListNode(5);
+//     ListNode *res = reverseList(head);
+//     while (res != nullptr)
+//     {
+//         cout<<res->val<<" -> ";
+//         res = res->next;
+//     }
+//     return 0;
+// }
+
+/*217. Contains Duplicate */
+// bool containsDuplicate(vector<int>& nums)
+// {
+//     set<int> se;
+//     for (auto &it : nums)
+//     {
+//         if (se.count(it))
+//             return true;
+//         se.insert(it);
+//     }
+//     return false;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{1,1,1,3,3,4,3,2,4,2};
+//     cout<<boolalpha<<containsDuplicate(vec)<<endl;
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{
