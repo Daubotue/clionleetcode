@@ -3896,6 +3896,117 @@
 //     return 0;
 // }
 
+/*207. Course Schedule */
+// bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites)
+// {
+//     if (numCourses < 2 || prerequisites.size() < 2)
+//         return true;
+//     vector<vector<int> > graph(numCourses, vector<int>(0));
+//     vector<int> degree(numCourses, 0);
+//     for (auto &it : prerequisites)
+//     {
+//         graph[it.second].push_back(it.first);
+//         degree[it.first]++;
+//     }
+//     queue<int> que;
+//     for (int i=0; i<numCourses; ++i)
+//     {
+//         if (degree[i] == 0)
+//             que.push(i);
+//     }
+//     while (!que.empty())
+//     {
+//         int tmp = que.front();
+//         que.pop();
+//         for (auto &it : graph[tmp])
+//         {
+//             degree[it]--;
+//             if (degree[it] == 0)
+//                 que.push(it);
+//         }
+//     }
+//     for (auto &it : degree)
+//     {
+//         if (it != 0)
+//             return false;
+//     }
+//     return true;
+// }
+//
+// int main()
+// {
+//     vector<pair<int, int> > vec;
+//     vec.push_back(pair<int, int>(1,0));
+//     vec.push_back(pair<int, int>(0,1));
+//     cout<<boolalpha<<canFinish(2, vec)<<endl;
+//     return 0;
+// }
+
+/*210. Course Schedule II */
+// vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites)
+// {
+//     vector<int> res;
+//     if (numCourses == 0)
+//         return res;
+//     vector<vector<int> > graph(numCourses, vector<int>(0));
+//     vector<int> degree(numCourses, 0);
+//     for (auto &it : prerequisites)
+//     {
+//         graph[it.second].push_back(it.first);
+//         degree[it.first]++;
+//     }
+//     queue<int> que;
+//     for (int i=0; i<numCourses; ++i)
+//     {
+//         if (degree[i] == 0)
+//         {
+//             que.push(i);
+//             res.push_back(i);
+//         }
+//     }
+//     while (!que.empty())
+//     {
+//         int tmp = que.front();
+//         que.pop();
+//         for (auto &it : graph[tmp])
+//         {
+//             degree[it]--;
+//             if (degree[it] == 0)
+//             {
+//                 que.push(it);
+//                 res.push_back(it);
+//             }
+//         }
+//     }
+//     for (auto &it : degree)
+//     {
+//         if (it != 0)
+//         {
+//             res.clear();
+//             return res;
+//         }
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<pair<int, int> > vec;
+////     vec.push_back(pair<int, int>(1,0));
+////     vec.push_back(pair<int, int>(2,0));
+////     vec.push_back(pair<int, int>(3,1));
+////     vec.push_back(pair<int, int>(3,2));
+////     vector<int> res = findOrder(4, vec);
+////     vector<int> res = findOrder(1, vec);
+//     vec.push_back(pair<int, int>(1,0));
+//     vec.push_back(pair<int, int>(1,2));
+//     vec.push_back(pair<int, int>(0,1));
+//     vector<int> res = findOrder(1, vec);
+//     for (auto &it : res)
+//         cout<<it<<" ";
+//     return 0;
+// }
+
 /*217. Contains Duplicate */
 // bool containsDuplicate(vector<int>& nums)
 // {
