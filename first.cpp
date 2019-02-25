@@ -4070,6 +4070,123 @@
 //     return 0;
 // }
 
+/*212. Word Search II */
+// struct Trie
+// {
+//     vector<Trie*> sons;
+//     bool isWord;
+//     Trie():sons(vector<Trie*>(26, nullptr)), isWord(false){}
+// };
+//
+// void dfs(int i, int j, Trie* root, string tmpstr, vector<string> &res, vector<vector<char> >& board, int nRow, int nCol)
+// {
+//     if (root == nullptr || board[i][j] == '#')
+//         return;
+//     tmpstr += board[i][j];
+//     if (root->isWord)
+//     {
+//         res.push_back(tmpstr);
+//         root->isWord = false;
+//     }
+//     char ch = board[i][j];
+//     board[i][j] = '#';
+//     if (i-1 >= 0)
+//         dfs(i-1, j, root->sons[board[i-1][j]-'a'], tmpstr, res, board, nRow, nCol);
+//     if (i+1 <nRow)
+//         dfs(i+1, j, root->sons[board[i+1][j]-'a'], tmpstr, res, board, nRow, nCol);
+//     if (j-1 >= 0)
+//         dfs(i, j-1, root->sons[board[i][j-1]-'a'], tmpstr, res, board, nRow, nCol);
+//     if (j+1 < nCol)
+//         dfs(i, j+1, root->sons[board[i][j+1]-'a'], tmpstr, res, board, nRow, nCol);
+//     board[i][j] = ch;
+// }
+//
+// vector<string> findWords(vector<vector<char> >& board, vector<string>& words)
+// {
+//     vector<string> res;
+//     if (board.empty() || words.empty())
+//         return res;
+//     Trie *root = new Trie();
+//     for (auto &s : words)
+//     {
+//         Trie *p = root;
+//         for (auto &w : s)
+//         {
+//             int val = w - 'a';
+//             if (p->sons[val] == nullptr)
+//                 p->sons[val] = new Trie();
+//             p = p->sons[val];
+//         }
+//         p->isWord = true;
+//     }
+//     int nRow = board.size();
+//     int nCol = board[0].size();
+//     for (int i=0; i<nRow; ++i)
+//     {
+//         for (int j=0; j<nCol; ++j)
+//         {
+//             dfs(i, j, root->sons[board[i][j]-'a'], "", res, board, nRow, nCol);
+//         }
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<string> words{"oath","pea","eat","rain"};
+//     vector<vector<char> > board{vector<char>{'o','a','a','n'},
+//                                 vector<char>{'e','t','a','e'},
+//                                 vector<char>{'i','h','k','r'},
+//                                 vector<char>{'i','f','l','v'}};
+//     vector<string> res = findWords(board, words);
+//     for (auto &it : res)
+//         cout<<it<<endl;
+//     return 0;
+// }
+
+/*215. Kth Largest Element in an Array */
+// int partition(vector<int>& nums, int low, int high)
+// {
+//     int pivot = nums[low];
+//     int index = low, r = low + 1;
+//     while (r <= high)
+//     {
+//         if (pivot < nums[r])
+//         {
+//             ++index;
+//             if (index != r)
+//             {
+//                 swap(nums[r], nums[index]);
+//             }
+//         }
+//         ++r;
+//     }
+//     swap(nums[index], nums[low]);
+//     return index;
+// }
+//
+// int findKthLargest(vector<int>& nums, int k)
+// {
+//     int pos = partition(nums, 0, nums.size()-1);
+//     int low = 0, high = nums.size()-1;
+//     while (pos != k-1)
+//     {
+//         if (pos < k-1)
+//             low = pos + 1;
+//         else
+//             high = pos - 1;
+//         pos = partition(nums, low, high);
+//     }
+//     return nums[k-1];
+// }
+//
+// int main()
+// {
+//     vector<int> vec{3,2,3,1,2,4,5,5,6};
+//     cout<<findKthLargest(vec, 4)<<endl;
+//     return 0;
+// }
+
 /*217. Contains Duplicate */
 // bool containsDuplicate(vector<int>& nums)
 // {
