@@ -11,10 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="135af4f5-0a60-4d5f-8b4d-ca2b9d4bf2db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/first.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="135af4f5-0a60-4d5f-8b4d-ca2b9d4bf2db" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="4177" column="15" selection-start-line="4177" selection-start-column="15" selection-end-line="4177" selection-end-column="15" />
+            <state relative-caret-position="557">
+              <caret line="4147" selection-start-line="4147" selection-end-line="4147" />
               <folding>
                 <element signature="e#39#91#0" />
                 <element signature="e#900#919#0" />
@@ -143,6 +140,7 @@
                 <element signature="e#85132#85151#0" />
                 <element signature="e#86737#86816#0" />
                 <element signature="e#88457#88471#0" />
+                <element signature="e#90791#90845#0" />
                 <element signature="e#88461#88505#0" />
                 <element signature="e#88873#88890#0" />
                 <element signature="e#89958#89999#0" />
@@ -261,7 +259,7 @@
       <workItem from="1551010681633" duration="4315000" />
       <workItem from="1551062727051" duration="1848000" />
       <workItem from="1551064832570" duration="34000" />
-      <workItem from="1551091281343" duration="5656000" />
+      <workItem from="1551091281343" duration="5754000" />
     </task>
     <task id="LOCAL-00001" summary="lxj:140, 141">
       <created>1549934358657</created>
@@ -375,11 +373,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551064864875</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="lxj:212 215">
+      <created>1551097790178</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1551097790178</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45796000" />
+    <option name="totallyTimeSpent" value="45894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -390,7 +395,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39479393" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,7 +433,8 @@
     <MESSAGE value="lxj:217 unordered_set" />
     <MESSAGE value="lxj:207 210" />
     <MESSAGE value="lxj:208" />
-    <option name="LAST_COMMIT_MESSAGE" value="lxj:208" />
+    <MESSAGE value="lxj:212 215" />
+    <option name="LAST_COMMIT_MESSAGE" value="lxj:212 215" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
@@ -455,8 +461,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="4177" column="15" selection-start-line="4177" selection-start-column="15" selection-end-line="4177" selection-end-column="15" />
+        <state relative-caret-position="557">
+          <caret line="4147" selection-start-line="4147" selection-end-line="4147" />
           <folding>
             <element signature="e#39#91#0" />
             <element signature="e#900#919#0" />
@@ -561,6 +567,7 @@
             <element signature="e#85132#85151#0" />
             <element signature="e#86737#86816#0" />
             <element signature="e#88457#88471#0" />
+            <element signature="e#90791#90845#0" />
             <element signature="e#88461#88505#0" />
             <element signature="e#88873#88890#0" />
             <element signature="e#89958#89999#0" />
