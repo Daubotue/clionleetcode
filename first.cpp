@@ -3942,6 +3942,69 @@
 //     return 0;
 // }
 
+/*208. Implement Trie (Prefix Tree) */
+// class TrieNode {
+// public:
+//     // Initialize your data structure here.
+//     TrieNode *child[26];
+//     bool isWord;
+//     TrieNode() :isWord(false) {
+//         for (auto &a : child) a = nullptr;
+//     }
+// };
+//
+// class Trie {
+// public:
+//     /** Initialize your data structure here. */
+//     Trie() {
+//         root = new TrieNode();
+//     }
+//
+//     /** Inserts a word into the trie. */
+//     void insert(string word) {
+//         TrieNode *p = root;
+//         for (auto &s : word)
+//         {
+//             int val = s - 'a';
+//             if (p->child[val] == nullptr)
+//             {
+//                 p->child[val] = new TrieNode();
+//             }
+//             p = p->child[val];
+//         }
+//         p->isWord = true;
+//     }
+//
+//     /** Returns if the word is in the trie. */
+//     bool search(string word) {
+//         TrieNode *p = root;
+//         for (auto &s : word)
+//         {
+//             int val = s - 'a';
+//             if (p->child[val] == nullptr)
+//                 return false;
+//             p = p->child[val];
+//         }
+//         return p->isWord;
+//     }
+//
+//     /** Returns if there is any word in the trie that starts with the given prefix. */
+//     bool startsWith(string prefix) {
+//         TrieNode *p = root;
+//         for (auto &s : prefix)
+//         {
+//             int val = s - 'a';
+//             if (p->child[val] == nullptr)
+//                 return false;
+//             p = p->child[val];
+//         }
+//         return true;
+//     }
+//
+// private:
+//     TrieNode *root;
+// };
+
 /*210. Course Schedule II */
 // vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites)
 // {
