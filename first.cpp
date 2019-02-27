@@ -4207,6 +4207,95 @@
 //     return 0;
 // }
 
+/*227. Basic Calculator II */
+// int calculate(string s)
+// {
+//     int res = 0;
+//     stack<int> sta;
+//     int num = 0;
+//     char ch = '+';
+//     for (int i=0; i<s.length(); ++i)
+//     {
+//         if (s[i]>='0' && s[i]<='9')
+//             num = num*10 +(s[i]-'0');
+//         if (s[i] == '+' || s[i] == '-' || s[i] == '*' || s[i] == '/' || i==(s.length()-1))
+//         {
+//             if (ch == '+')
+//                 sta.push(num);
+//             else if (ch == '-')
+//                 sta.push(-num);
+//             else if (ch == '*')
+//             {
+//                 int tmp = sta.top() * num;
+//                 sta.pop();
+//                 sta.push(tmp);
+//             }
+//             else if (ch == '/')
+//             {
+//                 int tmp = sta.top() / num;
+//                 sta.pop();
+//                 sta.push(tmp);
+//             }
+//             ch = s[i];
+//             num = 0;
+//         }
+//     }
+//     while (!sta.empty())
+//     {
+//         res += sta.top();
+//         sta.pop();
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     string str = "1*2-3/4+5*6-7*8+9/10";
+//     cout<<calculate(str)<<endl;
+//     return 0;
+// }
+
+/*230. Kth Smallest Element in a BST */
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// int kthSmallest(TreeNode* root, int k)
+// {
+//     stack<TreeNode*> sta;
+//     int cnt = 0;
+//     TreeNode *p = root;
+//     while (p!= nullptr || !sta.empty())
+//     {
+//         while (p != nullptr)
+//         {
+//             sta.push(p);
+//             p = p->left;
+//         }
+//         p = sta.top();
+//         sta.pop();
+//         if (++cnt == k)
+//             return p->val;
+//         p = p->right;
+//     }
+//     return 0;
+// }
+//
+// int main()
+// {
+//     TreeNode *root = new TreeNode(5);
+//     root->left = new TreeNode(3);
+//     root->right = new TreeNode(6);
+//     root->left->left = new TreeNode(2);
+//     root->left->right = new TreeNode(4);
+//     root->left->left->left = new TreeNode(1);
+//     cout<<kthSmallest(root, 3)<<endl;
+//     return 0;
+// }
+
 /*234. Palindrome Linked List*/
 //struct ListNode
 //{
