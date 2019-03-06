@@ -4347,6 +4347,86 @@
 //	return 0;
 //}
 
+/*236. Lowest Common Ancestor of a Binary Tree */
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// void dfs(TreeNode *r, vector<TreeNode*> &v, TreeNode* t, bool &f)
+// {
+//     v.push_back(r);
+//     if (r->val == t->val)
+//     {
+//         f = true;
+//         return;
+//     }
+//     if (!f && r->left!= nullptr)
+//         dfs(r->left, v, t, f);
+//     if (!f && r->right!= nullptr)
+//         dfs(r->right, v, t, f);
+//     if (f)
+//         return;
+//     v.pop_back();
+// }
+//
+// TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q)
+// {
+//     if (root == nullptr)
+//         return nullptr;
+//     vector<TreeNode*> vec1, vec2;
+//     bool flag = false;
+//     dfs(root, vec1, p, flag);
+//     flag = false;
+//     dfs(root, vec2, q, flag);
+//     if (vec1.empty() || vec2.empty())
+//         return nullptr;
+//     TreeNode* res = root;
+//     for (int i=0; i<vec1.size() && i<vec2.size(); ++i)
+//     {
+//         if (vec1[i] == vec2[i])
+//             res = vec1[i];
+//         else
+//             break;
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     TreeNode *root = new TreeNode(3);
+//     root->left = new TreeNode(5);
+//     root->right = new TreeNode(1);
+//     root->left->left = new TreeNode(6);
+//     root->left->right = new TreeNode(2);
+//     root->right->left = new TreeNode(0);
+//     root->right->right = new TreeNode(8);
+//     root->left->right->left = new TreeNode(7);
+//     root->left->right->right = new TreeNode(4);
+//     TreeNode *p = new TreeNode(5);
+//     TreeNode *q = new TreeNode(4);
+//     TreeNode *res = lowestCommonAncestor(root, p, q);
+//     cout<<res->val<<endl;
+//     return 0;
+// }
+
+/*237. Delete Node in a Linked List */
+// struct ListNode {
+//      int val;
+//     ListNode *next;
+//     ListNode(int x) : val(x), next(NULL) {}
+// };
+//
+// void deleteNode(ListNode* node)
+// {
+//    if (node == nullptr || node->next == nullptr)
+//        return;
+//    node->val = node->next->val;
+//    node->next = node->next->next;
+// }
+
 /*532. K-diff Pairs in an Array */
 //int findPairs(vector<int>& nums, int k)
 //{
