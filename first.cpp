@@ -4427,6 +4427,61 @@
 //    node->next = node->next->next;
 // }
 
+/*238. Product of Array Except Self */
+// vector<int> productExceptSelf(vector<int>& nums)
+// {
+//     vector<int> res(nums.size(), 1);
+//     vector<int> front(nums.size(), 1);
+//     vector<int> back(nums.size(), 1);
+//     for (int i=0; i<nums.size()-1; ++i)
+//         front[i+1] = nums[i] * front[i];
+//     for (int i=nums.size()-1; i>0; --i)
+//         back[i-1] = nums[i] * back[i];
+//     for (int i=0; i<nums.size(); ++i)
+//         res[i] = front[i] * back[i];
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{1, 2, 3, 4};
+//     vector<int> res = productExceptSelf(vec);
+//     for (auto &it : res)
+//         cout<<it<<" ";
+//     return 0;
+// }
+
+/*240. Search a 2D Matrix II */
+// bool searchMatrix(vector<vector<int>>& matrix, int target)
+// {
+//     if (matrix.size() == 0)
+//         return false;
+//     int rows = matrix.size();
+//     int cols = matrix[0].size();
+//     int i=0, j=cols-1;
+//     while (i<rows && j>=0)
+//     {
+//         if (matrix[i][j] == target)
+//             return true;
+//         else if (matrix[i][j] > target)
+//             --j;
+//         else
+//             ++i;
+//     }
+//     return false;
+// }
+//
+// int main()
+// {
+//    vector<vector<int>> matrix{vector<int>{1,   4,  7, 11, 15},
+//                               vector<int>{2,   5,  8, 12, 19},
+//                               vector<int>{3,   6,  9, 16, 22},
+//                               vector<int>{10, 13, 14, 17, 24},
+//                               vector<int>{18, 21, 23, 26, 30}};
+//    cout<<boolalpha<<searchMatrix(matrix, 13)<<endl;
+//    return 0;
+// }
+
 /*532. K-diff Pairs in an Array */
 //int findPairs(vector<int>& nums, int k)
 //{
