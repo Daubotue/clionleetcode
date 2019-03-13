@@ -4412,6 +4412,33 @@
 //     return 0;
 // }
 
+/*242. Valid Anagram*/
+// bool isAnagram(string s, string t)
+// {
+//     if (s.length() != t.length())
+//         return false;
+//     int arr[26] = {0};
+//     for (auto &it : s)
+//     {
+//         arr[it-'a'] += 1;
+//     }
+//     for (auto &it : t)
+//     {
+//         if (arr[it-'a'] == 0)
+//             return false;
+//         else
+//             arr[it-'a'] -= 1;
+//     }
+//     return true;
+// }
+//
+// int main()
+// {
+//     string s = "anagram", t = "nagaram";
+//     cout<<boolalpha<<isAnagram(s, t)<<endl;
+//     return 0;
+// }
+
 /*237. Delete Node in a Linked List */
 // struct ListNode {
 //      int val;
