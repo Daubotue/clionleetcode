@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="135af4f5-0a60-4d5f-8b4d-ca2b9d4bf2db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/first.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="4436" column="5" selection-start-line="4436" selection-start-column="5" selection-end-line="4436" selection-end-column="5" />
+            <state relative-caret-position="494">
+              <caret line="4415" selection-start-line="4415" selection-end-line="4415" />
               <folding>
                 <element signature="e#39#91#0" />
                 <element signature="e#900#919#0" />
@@ -149,6 +148,7 @@
                 <element signature="e#93378#93398#0" />
                 <element signature="e#94351#94368#0" />
                 <element signature="e#95451#95471#0" />
+                <element signature="e#97201#97238#0" />
                 <element signature="e#97217#97237#0" />
                 <element signature="e#97561#97612#0" />
                 <element signature="e#98234#98295#0" />
@@ -276,7 +276,7 @@
       <workItem from="1551957738365" duration="2188000" />
       <workItem from="1552386928232" duration="2733000" />
       <workItem from="1552464085092" duration="279000" />
-      <workItem from="1552464393498" duration="346000" />
+      <workItem from="1552464393498" duration="445000" />
     </task>
     <task id="LOCAL-00001" summary="lxj:140, 141">
       <created>1549934358657</created>
@@ -418,32 +418,39 @@
       <option name="project" value="LOCAL" />
       <updated>1552390278559</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="lxj:242">
+      <created>1552464831891</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1552464831891</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57323000" />
+    <option name="totallyTimeSpent" value="57422000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32968238" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39430448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3242059" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32321042" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="CMake" order="12" visible="true" weight="0.3264642" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.3264642" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -475,7 +482,8 @@
     <MESSAGE value="lxj:227 230" />
     <MESSAGE value="lxj:236 237" />
     <MESSAGE value="lxj:240" />
-    <option name="LAST_COMMIT_MESSAGE" value="lxj:240" />
+    <MESSAGE value="lxj:242" />
+    <option name="LAST_COMMIT_MESSAGE" value="lxj:242" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
@@ -496,8 +504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="4436" column="5" selection-start-line="4436" selection-start-column="5" selection-end-line="4436" selection-end-column="5" />
+        <state relative-caret-position="494">
+          <caret line="4415" selection-start-line="4415" selection-end-line="4415" />
           <folding>
             <element signature="e#39#91#0" />
             <element signature="e#900#919#0" />
@@ -608,6 +616,7 @@
             <element signature="e#93378#93398#0" />
             <element signature="e#94351#94368#0" />
             <element signature="e#95451#95471#0" />
+            <element signature="e#97201#97238#0" />
             <element signature="e#97217#97237#0" />
             <element signature="e#97561#97612#0" />
             <element signature="e#98234#98295#0" />
