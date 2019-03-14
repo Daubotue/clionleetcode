@@ -4509,6 +4509,24 @@
 //    return 0;
 // }
 
+/*268. Missing Number*/
+// int missingNumber(vector<int>& nums)
+// {
+//     int res = 0;
+//     for (int i=0; i<nums.size(); ++i)
+//     {
+//         res ^= (i+1)^nums[i];
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{9,6,4,2,3,5,7,0,1};
+//     cout<<missingNumber(vec)<<endl;
+//     return 0;
+// }
+
 /*532. K-diff Pairs in an Array */
 //int findPairs(vector<int>& nums, int k)
 //{
