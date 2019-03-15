@@ -4509,7 +4509,7 @@
 //    return 0;
 // }
 
-/*268. Missing Number*/
+/*268. Missing Number */
 // int missingNumber(vector<int>& nums)
 // {
 //     int res = 0;
@@ -4524,6 +4524,57 @@
 // {
 //     vector<int> vec{9,6,4,2,3,5,7,0,1};
 //     cout<<missingNumber(vec)<<endl;
+//     return 0;
+// }
+
+/*279. Perfect Squares */
+// int numSquares(int n)
+// {
+//     vector<int> vec(n+1, 0);
+//     for (int i=1; i<=n; ++i)
+//     {
+//         int res = INT_MAX;
+//         int j=1;
+//         while (i - j*j >= 0)
+//         {
+//             res = min(res, vec[i-j*j]+1);
+//             ++j;
+//         }
+//         vec[i] = res;
+//     }
+//     return vec[n];
+// }
+//
+// int main()
+// {
+//     cout<<numSquares(13)<<endl;
+//     return 0;
+// }
+
+/*283. Move Zeroes */
+// void moveZeroes(vector<int>& nums)
+// {
+//     int i=0;
+//     for (int j=0; j<nums.size(); ++j)
+//     {
+//         if (nums[j] != 0)
+//         {
+//             if (i != j)
+//             {
+//                 nums[i] = nums[j];
+//                 nums[j] = 0;
+//             }
+//             ++i;
+//         }
+//     }
+// }
+//
+// int main()
+// {
+//     vector<int> vec{0,1,0,3,12};
+//     moveZeroes(vec);
+//     for (auto &it : vec)
+//         cout<<it<< " "<<endl;
 //     return 0;
 // }
 
