@@ -4578,6 +4578,35 @@
 //     return 0;
 // }
 
+/*287. Find the Duplicate Number*/
+// int findDuplicate(vector<int>& nums)
+// {
+//     int left=0, right = (int)nums.size();
+//     while (left < right)
+//     {
+//         int mid = left + (right - left) / 2;
+//         int cnt = 0;
+//         for (auto &it : nums)
+//         {
+//             if (it <= mid)
+//                 ++cnt;
+//         }
+//         if (mid >= cnt)
+//             left = mid + 1;
+//         else
+//             right = mid;
+//     }
+//     return right;
+// }
+//
+//
+// int main()
+// {
+//     vector<int> vec{3,1,3,4,2};
+//     cout<<findDuplicate(vec)<<endl;
+//     return 0;
+// }
+
 /*532. K-diff Pairs in an Array */
 //int findPairs(vector<int>& nums, int k)
 //{
