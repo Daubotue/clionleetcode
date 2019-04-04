@@ -3125,6 +3125,54 @@
 //     return 0;
 // }
 
+/*142*/
+// struct ListNode {
+//     int val;
+//     ListNode *next;
+//     ListNode(int x) : val(x), next(NULL) {}
+// };
+//
+// ListNode *detectCycle(ListNode *head)
+// {
+//     if (head == nullptr)
+//         return nullptr;
+//     ListNode *fast = head;
+//     ListNode *slow = head;
+//     bool flag = false;
+//     while (fast != nullptr && fast->next != nullptr)
+//     {
+//         fast = fast->next->next;
+//         slow = slow->next;
+//         if (fast == slow)
+//         {
+//             flag = true;
+//             fast = head;
+//             while (fast != slow)
+//             {
+//                 fast = fast->next;
+//                 slow = slow->next;
+//             }
+//             break;
+//         }
+//     }
+//     if (!flag)
+//         return nullptr;
+//     else
+//         return fast;
+// }
+//
+// int main()
+// {
+//     ListNode *head = new ListNode(3);
+//     head->next = new ListNode(2);
+//     head->next->next = new ListNode(0);
+//     head->next->next->next = new ListNode(-4);
+//     head->next->next->next->next = head->next;
+//     ListNode *res = detectCycle(head);
+//     cout<<res->val<<endl;
+//     return 0;
+// }
+
 /*146. LRU Cache */
 //class LRUCache {
 //public:
@@ -4604,6 +4652,75 @@
 // {
 //     vector<int> vec{3,1,3,4,2};
 //     cout<<findDuplicate(vec)<<endl;
+//     return 0;
+// }
+
+/*289. Game of Life */
+// int getSumValue(vector<vector<int>>& board, int row, int col, int height, int width)
+// {
+//     int res = 0;
+//     for (int i=row-1; i<=row+1; ++i)
+//     {
+//         for (int j=col-1; j<=col+1; ++j)
+//         {
+//             if (i>=0 && i<height && j>=0 && j<width)
+//             {
+//                 if (i==row && j==col)
+//                     continue;
+//                 if (board[i][j] & 1)
+//                     ++res;
+//             }
+//         }
+//     }
+//     return res;
+// }
+//
+// void gameOfLife(vector<vector<int>>& board)
+// {
+//     //0:die, 1:live
+//     if (board.empty())
+//         return;
+//     int height = (int)board.size();
+//     int width = (int)board[0].size();
+//     if (height == 0 || width == 0)
+//         return;
+//     for (int row=0; row<height; ++row)
+//     {
+//         for (int col=0; col<width; ++col)
+//         {
+//             int sum = getSumValue(board, row, col, height, width);
+//             if (board[row][col]==1 && sum < 2)
+//                 board[row][col] = 1;
+//             else if (board[row][col]==1 && (sum==2 || sum==3))
+//                 board[row][col] = 3;
+//             else if (board[row][col]==1 && sum > 3)
+//                 board[row][col] = 1;
+//             else if (board[row][col]==0 && sum==3)
+//                 board[row][col] = 2;
+//         }
+//     }
+//     for (int row=0; row<height; ++row)
+//     {
+//         for (int col=0; col<width; ++col)
+//         {
+//             board[row][col] = board[row][col]>>1;
+//         }
+//     }
+// }
+//
+// int main()
+// {
+//     vector<vector<int> > vec{vector<int>{0,1,0},
+//                              vector<int>{0,0,1},
+//                              vector<int>{1,1,1},
+//                              vector<int>{0,0,0}};
+//     gameOfLife(vec);
+//     for (auto &row : vec)
+//     {
+//         for (auto &it :row)
+//             cout<<it<<" ";
+//         cout<<endl;
+//     }
 //     return 0;
 // }
 
