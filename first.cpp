@@ -2432,6 +2432,51 @@
 //    return 0;
 // }
 
+/*106. Construct Binary Tree from Inorder and Postorder Traversal*/
+// struct TreeNode {
+//     int val;
+//     TreeNode *left;
+//     TreeNode *right;
+//     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+// };
+//
+// TreeNode* makeTree(vector<int>& inorder, int inPos, vector<int>& postorder, int postPos, int len)
+// {
+//     if (len <= 0)
+//         return nullptr;
+//     int val = postorder.at(postPos+len-1);
+//     int index = 0;
+//     for (int i=inPos; i<inPos+len; ++i)
+//     {
+//         if (val == inorder.at(i))
+//         {
+//             index = i;
+//             break;
+//         }
+//     }
+//     TreeNode *root = new TreeNode(val);
+//     root->left = makeTree(inorder, inPos, postorder, postPos, index-inPos);
+//     root->right = makeTree(inorder, index+1, postorder, postPos+index-inPos, len-index+inPos-1);
+//     return root;
+// }
+//
+// TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder)
+// {
+//     TreeNode *root = nullptr;
+//     int nSize = (int)inorder.size();
+//     root = makeTree(inorder, 0, postorder, 0, nSize);
+//     return root;
+// }
+//
+// int main()
+// {
+//     vector<int> inorder{9,3,15,20,7};
+//     vector<int> postorder{9,15,7,20,3};
+//     TreeNode* root = buildTree(inorder, postorder);
+//     cout<<root->val<<endl;
+//     return 0;
+// }
+
 /*108. Convert Sorted Array to Binary Search Tree*/
 // struct TreeNode {
 //     int val;
@@ -4721,6 +4766,25 @@
 //             cout<<it<<" ";
 //         cout<<endl;
 //     }
+//     return 0;
+// }
+
+/*326. Power of Three*/
+// bool isPowerOfThree(int n)
+// {
+//     if (n <= 0)
+//         return false;
+//     while (n % 3 == 0)
+//         n /= 3;
+//     return n == 1;
+// }
+//
+// int main()
+// {
+//     cout<<boolalpha<<isPowerOfThree(27)<<endl;
+//     cout<<boolalpha<<isPowerOfThree(0)<<endl;
+//     cout<<boolalpha<<isPowerOfThree(9)<<endl;
+//     cout<<boolalpha<<isPowerOfThree(45)<<endl;
 //     return 0;
 // }
 
