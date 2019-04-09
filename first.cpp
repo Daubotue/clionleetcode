@@ -4769,6 +4769,32 @@
 //     return 0;
 // }
 
+/*300. Longest Increasing Subsequence*/
+// int lengthOfLIS(vector<int>& nums)
+// {
+//     if (nums.empty())
+//         return 0;
+//     vector<int> res(nums.size(), 1);
+//     int result = 1;
+//     for (int i=1; i<(int)nums.size(); ++i)
+//     {
+//         for (int j=0; j<i; j++)
+//         {
+//             if (nums[j] < nums[i])
+//                 res[i] = max(res[i], res[j]+1);
+//         }
+//         result = max(result, res[i]);
+//     }
+//     return result;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{10,9,2,5,3,7,101,18};
+//     cout<<lengthOfLIS(vec)<<endl;
+//     return 0;
+// }
+
 /*326. Power of Three*/
 // bool isPowerOfThree(int n)
 // {
