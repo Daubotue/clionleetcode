@@ -4795,6 +4795,53 @@
 //     return 0;
 // }
 
+/*315. Count of Smaller Numbers After Self*/
+// vector<int> countSmaller(vector<int>& nums)
+// {
+//     int nLen = (int)nums.size();
+//     vector<int> res(nLen, 0), tmp;
+//     for (int i=nLen-1; i>=0; --i)
+//     {
+//         auto it = lower_bound(tmp.begin(), tmp.end(), nums[i]);
+//         res[i] = int(it - tmp.begin());
+//         tmp.insert(it, nums[i]);
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<int> vec{5,2,6,1};
+//     vector<int> res = countSmaller(vec);
+//     for (auto &it : res)
+//         cout<<it<<", ";
+//     return 0;
+// }
+
+/*322. Coin Change*/
+// int coinChange(vector<int>& coins, int amount)
+// {
+//     vector<int> dp(amount+2, 1e9);
+//     dp[0] = 0;
+//     int nLen = int(coins.size());
+//     for (int i=0; i<nLen; ++i)
+//     {
+//         for (int j=coins[i]; j<=amount; ++j)
+//             dp[j] = min(dp[j], dp[j - coins[i]]+1);
+//     }
+//     if (dp[amount] == 1e9)
+//         return -1;
+//     else
+//         return dp[amount];
+// }
+//
+// int main()
+// {
+//     vector<int> vec{186, 419, 83, 408};
+//     cout<<coinChange(vec, 6249)<<endl;
+//     return 0;
+// }
+
 /*326. Power of Three*/
 // bool isPowerOfThree(int n)
 // {

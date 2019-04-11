@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="4774" column="5" selection-start-line="4774" selection-start-column="5" selection-end-line="4787" selection-end-column="19" />
+            <state relative-caret-position="240">
+              <caret line="4823" column="33" selection-start-line="4823" selection-start-column="33" selection-end-line="4823" selection-end-column="33" />
               <folding>
                 <element signature="e#39#91#0" />
                 <element signature="e#900#919#0" />
@@ -160,8 +160,10 @@
                 <element signature="e#102924#102961#0" />
                 <element signature="e#103454#103493#0" />
                 <element signature="e#104050#104137#0" />
-                <element signature="e#106017#106046#0" />
-                <element signature="e#106446#106487#0" />
+                <element signature="e#106033#106070#0" />
+                <element signature="e#106639#106685#0" />
+                <element signature="e#106618#106647#0" />
+                <element signature="e#107047#107088#0" />
               </folding>
             </state>
           </provider>
@@ -191,9 +193,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="553" />
-    <option name="width" value="1054" />
-    <option name="height" value="867" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -283,7 +285,8 @@
       <workItem from="1553509466931" duration="8000" />
       <workItem from="1554338928628" duration="2685000" />
       <workItem from="1554551045821" duration="2566000" />
-      <workItem from="1554778773273" duration="845000" />
+      <workItem from="1554778773273" duration="947000" />
+      <workItem from="1554955750820" duration="5045000" />
     </task>
     <task id="LOCAL-00001" summary="lxj:140, 141">
       <created>1549934358657</created>
@@ -460,28 +463,35 @@
       <option name="project" value="LOCAL" />
       <updated>1554553948082</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="lxj:300">
+      <created>1554779871154</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1554779871159</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71150000" />
+    <option name="totallyTimeSpent" value="76297000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="553" y="0" width="1054" height="867" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19919518" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22100656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32742155" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39290586" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3263965" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39211392" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32196453" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32092005" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -497,7 +507,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lxj:140, 141" />
     <MESSAGE value="lxj:171" />
     <MESSAGE value="lxj:146, 148, 149" />
     <MESSAGE value="lxj:150 155" />
@@ -522,7 +531,8 @@
     <MESSAGE value="lxj:279 283" />
     <MESSAGE value="lxj:289 242" />
     <MESSAGE value="lxj:106 326" />
-    <option name="LAST_COMMIT_MESSAGE" value="lxj:106 326" />
+    <MESSAGE value="lxj:300" />
+    <option name="LAST_COMMIT_MESSAGE" value="lxj:300" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
@@ -543,8 +553,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="4774" column="5" selection-start-line="4774" selection-start-column="5" selection-end-line="4787" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="4823" column="33" selection-start-line="4823" selection-start-column="33" selection-end-line="4823" selection-end-column="33" />
           <folding>
             <element signature="e#39#91#0" />
             <element signature="e#900#919#0" />
@@ -666,8 +676,10 @@
             <element signature="e#102924#102961#0" />
             <element signature="e#103454#103493#0" />
             <element signature="e#104050#104137#0" />
-            <element signature="e#106017#106046#0" />
-            <element signature="e#106446#106487#0" />
+            <element signature="e#106033#106070#0" />
+            <element signature="e#106639#106685#0" />
+            <element signature="e#106618#106647#0" />
+            <element signature="e#107047#107088#0" />
           </folding>
         </state>
       </provider>
