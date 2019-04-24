@@ -4861,6 +4861,73 @@
 //     return 0;
 // }
 
+/*328. Odd Even Linked List*/
+// struct ListNode {
+//     int val;
+//     ListNode *next;
+//     ListNode(int x) : val(x), next(NULL) {}
+// };
+//
+// ListNode* oddEvenList(ListNode* head)
+// {
+//     if (head == nullptr)
+//         return nullptr;
+//     ListNode *odd = head;
+//     ListNode *evenH = head->next;
+//     ListNode *even = evenH;
+//     while (even && even->next)
+//     {
+//         odd->next = even->next;
+//         even->next = odd->next->next;
+//         odd = odd->next;
+//         even = even->next;
+//     }
+//     odd->next = evenH;
+//     return head;
+// }
+//
+// int main()
+// {
+//     ListNode *head = new ListNode(1);
+//     head->next = new ListNode(2);
+//     head->next->next = new ListNode(3);
+//     head->next->next->next = new ListNode(4);
+//     head->next->next->next->next = new ListNode(5);
+//     ListNode *nd = oddEvenList(head);
+//     while (nd != nullptr)
+//     {
+//         cout<<nd->val<<endl;
+//         nd = nd->next;
+//     }
+//     return 0;
+// }
+
+/*334. Increasing Triplet Subsequence*/
+// bool increasingTriplet(vector<int>& nums)
+// {
+//     if (nums.empty())
+//         return false;
+//     int nSize = static_cast<int>(nums.size());
+//     int m = INT_MAX, n = INT_MAX;
+//     for (auto &it : nums)
+//     {
+//         if (m >= it)
+//             m = it;
+//         else if (n >= it)
+//             n = it;
+//         else
+//             return true;
+//     }
+//     return false;
+// }
+//
+// int main()
+// {
+//     vector<int> nums{5,4,3,2,1};
+//     cout<<boolalpha<<increasingTriplet(nums)<<endl;
+//     return 0;
+// }
+
 /*532. K-diff Pairs in an Array */
 //int findPairs(vector<int>& nums, int k)
 //{
