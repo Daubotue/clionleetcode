@@ -4928,6 +4928,27 @@
 //     return 0;
 // }
 
+/*344. Reverse String*/
+// void reverseString(vector<char>& s)
+// {
+//     if (s.empty())
+//         return;
+//     unsigned int nLen = s.size() / 2;
+//     for (unsigned int i=0; i<nLen; i++)
+//     {
+//         swap(s[i], s[s.size()-i-1]);
+//     }
+// }
+//
+// int main()
+// {
+//     vector<char> vec{'h', 'e', 'l', 'l', 'o'};
+//     reverseString(vec);
+//     for (auto &ch : vec)
+//         cout<<ch<<" ";
+//     return 0;
+// }
+
 /*532. K-diff Pairs in an Array */
 //int findPairs(vector<int>& nums, int k)
 //{
