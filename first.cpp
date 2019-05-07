@@ -4949,6 +4949,42 @@
 //     return 0;
 // }
 
+/*347. Top K Frequent Elements*/
+// vector<int> topKFrequent(vector<int>& nums, int k)
+// {
+//     map<int, int> ma;
+//     for (auto &it : nums)
+//     {
+//         if (ma.count(it) == 0)
+//             ma[it] = 1;
+//         else
+//             ma[it] += 1;
+//     }
+//     unsigned int nLen = nums.size();
+//     typedef pair<int, int> dic;
+//     vector<dic> vec;
+//     for (auto &m :ma)
+//     {
+//         vec.push_back(make_pair(m.first, m.second));
+//     }
+//     sort(vec.begin(), vec.end(), [&](const dic &A, const dic &B){return A.second > B.second;});
+//     vector<int> res(k);
+//     for (int i=0; i<k; ++i)
+//     {
+//         res[i] = vec[i].first;
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<int> nums{1,1,1,2,2,3};
+//     vector<int> res = topKFrequent(nums, 2);
+//     for (auto &it : res)
+//         cout<<it<<" ";
+//     return 0;
+// }
+
 /*532. K-diff Pairs in an Array */
 //int findPairs(vector<int>& nums, int k)
 //{

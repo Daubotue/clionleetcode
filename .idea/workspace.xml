@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="4933" column="5" selection-start-line="4933" selection-start-column="5" selection-end-line="4939" selection-end-column="6" />
+            <state relative-caret-position="830">
+              <caret line="4980" column="22" selection-start-line="4980" selection-start-column="22" selection-end-line="4980" selection-end-column="22" />
               <folding>
                 <element signature="e#39#91#0" />
                 <element signature="e#900#919#0" />
@@ -166,6 +166,8 @@
                 <element signature="e#107744#107773#0" />
                 <element signature="e#108168#108188#0" />
                 <element signature="e#109175#109219#0" />
+                <element signature="e#109738#109776#0" />
+                <element signature="e#110181#110222#0" />
               </folding>
             </state>
           </provider>
@@ -292,7 +294,8 @@
       <workItem from="1554955750820" duration="5261000" />
       <workItem from="1555839570729" duration="662000" />
       <workItem from="1556091263752" duration="1892000" />
-      <workItem from="1557103859341" duration="920000" />
+      <workItem from="1557103859341" duration="1177000" />
+      <workItem from="1557234350462" duration="1091000" />
     </task>
     <task id="LOCAL-00001" summary="lxj:140, 141">
       <created>1549934358657</created>
@@ -490,22 +493,29 @@
       <option name="project" value="LOCAL" />
       <updated>1556094512977</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="lxj:344">
+      <created>1557106485933</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1557106485933</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79987000" />
+    <option name="totallyTimeSpent" value="81335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.114072494" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11513859" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3253796" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3253796" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3918575" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -527,7 +537,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lxj:150 155" />
     <MESSAGE value="lxj:160" />
     <MESSAGE value="lxj:162 166" />
     <MESSAGE value="lxj:169" />
@@ -552,7 +561,8 @@
     <MESSAGE value="lxj:300" />
     <MESSAGE value="lxj:315 ~ 322" />
     <MESSAGE value="lxj:334" />
-    <option name="LAST_COMMIT_MESSAGE" value="lxj:334" />
+    <MESSAGE value="lxj:344" />
+    <option name="LAST_COMMIT_MESSAGE" value="lxj:344" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
@@ -573,8 +583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="4933" column="5" selection-start-line="4933" selection-start-column="5" selection-end-line="4939" selection-end-column="6" />
+        <state relative-caret-position="830">
+          <caret line="4980" column="22" selection-start-line="4980" selection-start-column="22" selection-end-line="4980" selection-end-column="22" />
           <folding>
             <element signature="e#39#91#0" />
             <element signature="e#900#919#0" />
@@ -702,6 +712,8 @@
             <element signature="e#107744#107773#0" />
             <element signature="e#108168#108188#0" />
             <element signature="e#109175#109219#0" />
+            <element signature="e#109738#109776#0" />
+            <element signature="e#110181#110222#0" />
           </folding>
         </state>
       </provider>
