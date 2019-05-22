@@ -4985,6 +4985,62 @@
 //     return 0;
 // }
 
+/*350. Intersection of Two Arrays II*/
+// vector<int> intersect(vector<int>& nums1, vector<int>& nums2)
+// {
+//     vector<int> res;
+//     if (nums1.empty() || nums2.empty())
+//         return res;
+//     sort(nums1.begin(), nums1.end());
+//     sort(nums2.begin(), nums2.end());
+//     for (size_t i = 0, j = 0; i < nums1.size() && j < nums2.size();)
+//     {
+//         if (nums1[i] == nums2[j])
+//         {
+//             res.push_back(nums1[i]);
+//             ++i;
+//             ++j;
+//         }
+//         else if (nums1[i] > nums2[j])
+//         {
+//             ++j;
+//         }
+//         else if (nums1[i] < nums2[j])
+//         {
+//             ++i;
+//         }
+//     }
+//     return res;
+// }
+//
+// int main()
+// {
+//     vector<int> vec1{4, 9, 5};
+//     vector<int> vec2{9, 4, 9, 8, 4};
+//     vector<int> res = intersect(vec1, vec2);
+//     for (auto &it : res)
+//         cout<<it<<endl;
+//     return 0;
+// }
+
+/*371. Sum of Two Integers*/
+// int getSum(int a, int b)
+// {
+//     while (b != 0)
+//     {
+//         int c = a ^ b;
+//         b = (a & b) << 1;
+//         a = c;
+//     }
+//     return a;
+// }
+//
+// int main()
+// {
+//     cout<<getSum(-2, 1)<<endl;
+//     return 0;
+// }
+
 /*532. K-diff Pairs in an Array */
 //int findPairs(vector<int>& nums, int k)
 //{

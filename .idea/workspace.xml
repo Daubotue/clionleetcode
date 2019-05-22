@@ -25,20 +25,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="830">
-              <caret line="4980" column="22" selection-start-line="4980" selection-start-column="22" selection-end-line="4980" selection-end-column="22" />
+            <state relative-caret-position="301">
+              <caret line="5039" column="23" selection-start-line="5039" selection-start-column="23" selection-end-line="5039" selection-end-column="23" />
               <folding>
                 <element signature="e#39#91#0" />
                 <element signature="e#900#919#0" />
@@ -167,17 +158,10 @@
                 <element signature="e#108168#108188#0" />
                 <element signature="e#109175#109219#0" />
                 <element signature="e#109738#109776#0" />
-                <element signature="e#110181#110222#0" />
+                <element signature="e#110179#110232#0" />
+                <element signature="e#111070#111134#0" />
+                <element signature="e#111066#111107#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libstd.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -196,11 +180,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="430" />
-    <option name="y" value="21" />
-    <option name="width" value="1144" />
-    <option name="height" value="920" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,16 +191,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="leetcodeCLion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="clionleetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -295,7 +289,10 @@
       <workItem from="1555839570729" duration="662000" />
       <workItem from="1556091263752" duration="1892000" />
       <workItem from="1557103859341" duration="1177000" />
-      <workItem from="1557234350462" duration="1091000" />
+      <workItem from="1557234350462" duration="1214000" />
+      <workItem from="1557357698535" duration="44000" />
+      <workItem from="1558221350164" duration="181000" />
+      <workItem from="1558527640073" duration="1842000" />
     </task>
     <task id="LOCAL-00001" summary="lxj:140, 141">
       <created>1549934358657</created>
@@ -500,28 +497,35 @@
       <option name="project" value="LOCAL" />
       <updated>1557106485933</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="lxj:347">
+      <created>1557235580684</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1557235580684</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81335000" />
+    <option name="totallyTimeSpent" value="83525000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11513859" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2439825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3253796" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3918575" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3242059" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39101863" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3177874" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.31653887" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -537,7 +541,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lxj:160" />
     <MESSAGE value="lxj:162 166" />
     <MESSAGE value="lxj:169" />
     <MESSAGE value="lxj:172" />
@@ -562,7 +565,8 @@
     <MESSAGE value="lxj:315 ~ 322" />
     <MESSAGE value="lxj:334" />
     <MESSAGE value="lxj:344" />
-    <option name="LAST_COMMIT_MESSAGE" value="lxj:344" />
+    <MESSAGE value="lxj:347" />
+    <option name="LAST_COMMIT_MESSAGE" value="lxj:347" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.cpp" />
@@ -583,8 +587,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="830">
-          <caret line="4980" column="22" selection-start-line="4980" selection-start-column="22" selection-end-line="4980" selection-end-column="22" />
+        <state relative-caret-position="301">
+          <caret line="5039" column="23" selection-start-line="5039" selection-start-column="23" selection-end-line="5039" selection-end-column="23" />
           <folding>
             <element signature="e#39#91#0" />
             <element signature="e#900#919#0" />
@@ -713,7 +717,9 @@
             <element signature="e#108168#108188#0" />
             <element signature="e#109175#109219#0" />
             <element signature="e#109738#109776#0" />
-            <element signature="e#110181#110222#0" />
+            <element signature="e#110179#110232#0" />
+            <element signature="e#111070#111134#0" />
+            <element signature="e#111066#111107#0" />
           </folding>
         </state>
       </provider>
