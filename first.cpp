@@ -5041,6 +5041,29 @@
 //     return 0;
 // }
 
+/*378. Kth Smallest Element in a Sorted Matrix*/
+// int kthSmallest(vector<vector<int>>& matrix, int k)
+// {
+//     priority_queue<int> que;
+//     for (size_t i=0; i<matrix.size(); ++i)
+//     {
+//         for (size_t j=0; j<matrix[0].size(); ++j)
+//         {
+//             que.emplace(matrix[i][j]);
+//             if (que.size() > k)
+//                 que.pop();
+//         }
+//     }
+//     return que.top();
+// }
+//
+// int main()
+// {
+//     vector<vector<int> > vec{vector<int>{1, 5, 9}, vector<int>{10, 11, 13}, vector<int>{12, 13, 15}};
+//     cout<<kthSmallest(vec, 8)<<endl;
+//     return 0;
+// }
+
 /*532. K-diff Pairs in an Array */
 //int findPairs(vector<int>& nums, int k)
 //{
